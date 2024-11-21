@@ -321,22 +321,13 @@ local script = G2L["18"];
 	
 	local loopjmp = false
 	
-	
 	local chotxt = script.Parent.Frame.TextBox
-	
 	
 	local waypoints1 = {
 	    CFrame.new(-3.022416114807129, 97.6887435913086, 242.14329528808594),
-	    CFrame.new(-18.111, 2.952, -12.279),
+	    CFrame.new(-738.9210815429688, 135.5248565673828, 747.814208984375),
 	    CFrame.new(0, 3, 0)
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	local function moveToNextWaypoint(index)
 	    if index > #waypoints1 then
@@ -346,79 +337,67 @@ local script = G2L["18"];
 	
 	    humanoid:MoveTo(waypoints1[index].Position)
 	    humanoid.MoveToFinished:Wait()
-		
 	
-	--------
-		
-		if index == 1 then
-			
-			moveToNextWaypoint(index + 1)
-			jmp()
-		end
-		
-	--------
-		if index == 2 then
-			
-			
-		end
-		
-		
-	--------
-		if index == 3 then
-			
-			
+	    if index == 1 then
+	        moveToNextWaypoint(index + 1)
+	        tp()
 	    end
-		
 	
-	    
+	    if index == 2 then
+	    end
+	
+	    if index == 3 then
+		end
+	    if index == 4 then
+	    end
+	    if index == 5 then
+	    end	
+	    if index == 6 then
+	    end	
+	    if index == 7 then
+	    end	
+	    if index == 8 then
+		end	
+	    if index == 9 then
+	    end	
+	    if index == 10 then
+	    end	
 	end
 	
 	button.MouseButton1Click:Connect(function()
-		if chotxt.Text == "1" then
-			moveToNextWaypoint(1)
-		end
-	  
+	    if chotxt.Text == "1" then
+	        moveToNextWaypoint(1)
+	    end
 	end)
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	--jump script
 	local player = game.Players.LocalPlayer
 	--jmp function use jmp() to fire function
 	function jmp()
-		
-		local character = player.Character or player.CharacterAdded:Wait()
-		
-		local humanoid = character:FindFirstChildOfClass("Humanoid")
-		
+	    local character = player.Character or player.CharacterAdded:Wait()
+	    local humanoid = character:FindFirstChildOfClass("Humanoid")
 	    if humanoid then
-			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-			
-			
-		
-	end
+	        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	    end
 	end
 	
 	function unloop()
-		
 	end
 	
 	while true do
-		wait(0.1)
-		while loopjmp do
-			wait(0.65)--jump delay normal to 0.65 fast if want slow change it to 1
-			jmp()
-		end
-		
+	    wait()
+	    while loopjmp do
+	        wait(0.65)--jump delay normal to 0.65 fast if want slow change it to 1
+	        jmp()
+	    end
 	end
+	
+	function tp()
+	    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	    pl.CFrame = CFrame.new(-738.9210815429688, 135.5248565673828, 747.814208984375)
+	end
+	
+	
 end;
 task.spawn(C_18);
 
