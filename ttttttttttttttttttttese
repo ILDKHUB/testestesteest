@@ -279,7 +279,7 @@ local script = G2L["f"];
 		else
 			if bv == true then
 				bv = false
-				asd:TweenPosition(UDim2.new(0.176, 0,0, 0), "In", "Sine", 0.5, true)
+				asd:TweenPosition(UDim2.new(0.176, 0,-0.095, 0), "In", "Sine", 0.5, true)
 				for i = 1, 18 do
 					wait()
 					btn.Rotation = btn.Rotation + 10
