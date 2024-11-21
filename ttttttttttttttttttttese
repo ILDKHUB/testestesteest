@@ -321,6 +321,9 @@ local script = G2L["18"];
 	
 	local loopjmp = false
 	
+	
+	
+	
 	local chotxt = script.Parent.Frame.TextBox
 	
 	local waypoints1 = {
@@ -393,9 +396,7 @@ local script = G2L["18"];
 	end
 	
 	function tp()
-	local TweenService = game:GetService("TweenService")
-	local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
-	{CFrame = CFrame.new(-738.9210815429688, 135.5248565673828, 747.814208984375)}):Play()
+		UserInputService.InputBegan:Fire(Enum.UserInputType.Keyboard, false, Enum.KeyCode.E)
 	end
 	
 	
