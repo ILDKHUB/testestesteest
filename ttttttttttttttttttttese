@@ -326,7 +326,7 @@ local script = G2L["18"];
 	
 	
 	local waypoints1 = {
-	    CFrame.new(19.194, 3, -57.17),
+	    CFrame.new(-3, 98, 243),
 	    CFrame.new(-18.111, 2.952, -12.279),
 	    CFrame.new(0, 3, 0)
 	}
