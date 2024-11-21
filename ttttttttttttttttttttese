@@ -1,0 +1,425 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 30 | Scripts: 7 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.cheat uix
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[cheat uix]];
+
+
+-- StarterGui.cheat uix.al
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["ZIndex"] = 10;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Size"] = UDim2.new(0.64625, 0, 0.80965, 0);
+G2L["2"]["Position"] = UDim2.new(0.176, 0, -0.09475, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[al]];
+G2L["2"]["BackgroundTransparency"] = 0.65;
+
+
+-- StarterGui.cheat uix.al.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.cheat uix.al.UIStroke
+G2L["4"] = Instance.new("UIStroke", G2L["2"]);
+G2L["4"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.cheat uix.al.UIStroke.UIGradient
+G2L["5"] = Instance.new("UIGradient", G2L["4"]);
+G2L["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.270, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.474, Color3.fromRGB(0, 255, 226)),ColorSequenceKeypoint.new(0.671, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.cheat uix.al.UIStroke.UIGradient.LocalScript
+G2L["6"] = Instance.new("LocalScript", G2L["5"]);
+
+
+
+-- StarterGui.cheat uix.al.tgt
+G2L["7"] = Instance.new("Frame", G2L["2"]);
+G2L["7"]["ZIndex"] = 10;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Size"] = UDim2.new(0.09873, 0, 0.15237, 0);
+G2L["7"]["Position"] = UDim2.new(0.44796, 0, 1.05639, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Name"] = [[tgt]];
+G2L["7"]["Rotation"] = -180;
+G2L["7"]["BackgroundTransparency"] = 0.65;
+
+
+-- StarterGui.cheat uix.al.tgt.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["7"]);
+
+
+
+-- StarterGui.cheat uix.al.tgt.UIStroke
+G2L["9"] = Instance.new("UIStroke", G2L["7"]);
+G2L["9"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.cheat uix.al.tgt.UIStroke.UIGradient
+G2L["a"] = Instance.new("UIGradient", G2L["9"]);
+G2L["a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.535, Color3.fromRGB(0, 255, 226)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.cheat uix.al.tgt.UIStroke.UIGradient.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+
+
+
+-- StarterGui.cheat uix.al.tgt.UIAspectRatioConstraint
+G2L["c"] = Instance.new("UIAspectRatioConstraint", G2L["7"]);
+
+
+
+-- StarterGui.cheat uix.al.tgt.TextButton
+G2L["d"] = Instance.new("TextButton", G2L["7"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextColor3"] = Color3.fromRGB(2, 252, 255);
+G2L["d"]["TextScaled"] = true;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["ZIndex"] = 11;
+G2L["d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[△]];
+G2L["d"]["Rotation"] = -180;
+
+
+-- StarterGui.cheat uix.al.tgt.TextButton.UIPadding
+G2L["e"] = Instance.new("UIPadding", G2L["d"]);
+G2L["e"]["PaddingTop"] = UDim.new(0, 5);
+G2L["e"]["PaddingBottom"] = UDim.new(0, 10);
+
+
+-- StarterGui.cheat uix.al.tgt.TextButton.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["d"]);
+
+
+
+-- StarterGui.cheat uix.al.tgt.TextButton.UIStroke
+G2L["10"] = Instance.new("UIStroke", G2L["d"]);
+G2L["10"]["Thickness"] = 4;
+G2L["10"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.cheat uix.al.tgt.TextButton.UIStroke.UIGradient
+G2L["11"] = Instance.new("UIGradient", G2L["10"]);
+G2L["11"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.375, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.535, Color3.fromRGB(0, 255, 226)),ColorSequenceKeypoint.new(0.692, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.cheat uix.al.tgt.TextButton.UIStroke.UIGradient.LocalScript
+G2L["12"] = Instance.new("LocalScript", G2L["11"]);
+
+
+
+-- StarterGui.cheat uix.al.Frame
+G2L["13"] = Instance.new("Frame", G2L["2"]);
+G2L["13"]["ZIndex"] = 11;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Size"] = UDim2.new(0.80641, 0, 0.0888, 0);
+G2L["13"]["Position"] = UDim2.new(0.07138, 0, 0.8598, 0);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.cheat uix.al.Frame.UICorner
+G2L["14"] = Instance.new("UICorner", G2L["13"]);
+
+
+
+-- StarterGui.cheat uix.al.Frame.UIStroke
+G2L["15"] = Instance.new("UIStroke", G2L["13"]);
+G2L["15"]["Color"] = Color3.fromRGB(0, 255, 255);
+
+
+-- StarterGui.cheat uix.al.Frame.TextButton
+G2L["16"] = Instance.new("TextButton", G2L["13"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["ZIndex"] = 12;
+G2L["16"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[Auto (CLICK HERE TO START)]];
+
+
+-- StarterGui.cheat uix.al.Frame.TextButton.MakePlayerJumpOnClick
+G2L["17"] = Instance.new("LocalScript", G2L["16"]);
+G2L["17"]["Enabled"] = false;
+G2L["17"]["Name"] = [[MakePlayerJumpOnClick]];
+G2L["17"]["Disabled"] = true;
+
+
+-- StarterGui.cheat uix.al.Frame.TextButton.MovePlayerOnClick
+G2L["18"] = Instance.new("LocalScript", G2L["16"]);
+G2L["18"]["Name"] = [[MovePlayerOnClick]];
+
+
+-- StarterGui.cheat uix.al.Frame.TextButton.Frame
+G2L["19"] = Instance.new("Frame", G2L["16"]);
+G2L["19"]["ZIndex"] = 11;
+G2L["19"]["BorderSizePixel"] = 0;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["Size"] = UDim2.new(0.80641, 0, 1.66061, 0);
+G2L["19"]["Position"] = UDim2.new(0.07138, 0, -2.45607, 0);
+G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.cheat uix.al.Frame.TextButton.Frame.UICorner
+G2L["1a"] = Instance.new("UICorner", G2L["19"]);
+
+
+
+-- StarterGui.cheat uix.al.Frame.TextButton.Frame.UIStroke
+G2L["1b"] = Instance.new("UIStroke", G2L["19"]);
+G2L["1b"]["Color"] = Color3.fromRGB(0, 255, 255);
+
+
+-- StarterGui.cheat uix.al.Frame.TextButton.Frame.TextBox
+G2L["1c"] = Instance.new("TextBox", G2L["19"]);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 243, 255);
+G2L["1c"]["ZIndex"] = 11;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["TextTransparency"] = 0.44;
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["RichText"] = true;
+G2L["1c"]["PlaceholderText"] = [[paste state 1-100 if you want to auto play or skip]];
+G2L["1c"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[]];
+G2L["1c"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.cheat uix.al.Frame.TextButton.Frame.TextBox.UIPadding
+G2L["1d"] = Instance.new("UIPadding", G2L["1c"]);
+G2L["1d"]["PaddingTop"] = UDim.new(0, 10);
+G2L["1d"]["PaddingBottom"] = UDim.new(0, 10);
+
+
+-- StarterGui.cheat uix.PrintNumbers
+G2L["1e"] = Instance.new("LocalScript", G2L["1"]);
+G2L["1e"]["Enabled"] = false;
+G2L["1e"]["Name"] = [[PrintNumbers]];
+G2L["1e"]["Disabled"] = true;
+
+
+-- StarterGui.cheat uix.al.UIStroke.UIGradient.LocalScript
+local function C_6()
+local script = G2L["6"];
+	while true do wait()
+		script.Parent.Rotation += 4
+	end
+end;
+task.spawn(C_6);
+-- StarterGui.cheat uix.al.tgt.UIStroke.UIGradient.LocalScript
+local function C_b()
+local script = G2L["b"];
+	while true do wait()
+		script.Parent.Rotation += 4
+	end
+end;
+task.spawn(C_b);
+-- StarterGui.cheat uix.al.tgt.TextButton.LocalScript
+local function C_f()
+local script = G2L["f"];
+	local ddf = script.Parent
+	local asd = script.Parent.Parent.Parent.Parent.al
+	local btn = script.Parent.Parent.Parent.tgt
+	local tot = true
+	local bv = true
+	
+	
+	
+	ddf.MouseButton1Click:Connect(function()
+		if tot == true then
+			
+			
+			if bv == true then
+				bv = false
+				asd:TweenPosition(UDim2.new(0.176, 0,-0.95, 0), "In", "Sine", 0.5, true)
+				for i = 1, 18 do
+					wait()
+					btn.Rotation = btn.Rotation + 10
+				end
+				--wait(1.2)
+				
+				tot = false
+				bv = true
+			end
+			
+			
+		else
+			if bv == true then
+				bv = false
+				asd:TweenPosition(UDim2.new(0.176, 0,0, 0), "In", "Sine", 0.5, true)
+				for i = 1, 18 do
+					wait()
+					btn.Rotation = btn.Rotation + 10
+				end
+				--wait(1.2)
+	
+	
+				bv = true
+				tot = true
+			end
+			
+			
+		end
+	end)
+	
+	
+	
+	
+end;
+task.spawn(C_f);
+-- StarterGui.cheat uix.al.tgt.TextButton.UIStroke.UIGradient.LocalScript
+local function C_12()
+local script = G2L["12"];
+	while true do wait()
+		script.Parent.Rotation += 4
+	end
+end;
+task.spawn(C_12);
+-- StarterGui.cheat uix.al.Frame.TextButton.MovePlayerOnClick
+local function C_18()
+local script = G2L["18"];
+	local UserInputService = game:GetService("UserInputService")
+	local Players = game:GetService("Players")
+	
+	local button = script.Parent
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	local loopjmp = false
+	
+	
+	local chotxt = script.Parent.Frame.TextBox
+	
+	
+	local waypoints1 = {
+	    CFrame.new(19.194, 3, -57.17),
+	    CFrame.new(-18.111, 2.952, -12.279),
+	    CFrame.new(0, 3, 0)
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	local function moveToNextWaypoint(index)
+	    if index > #waypoints1 then
+	        print("END. WALK.")
+	        return
+	    end
+	
+	    humanoid:MoveTo(waypoints1[index].Position)
+	    humanoid.MoveToFinished:Wait()
+		
+	
+	--------
+		
+		if index == 1 then
+			
+			moveToNextWaypoint(index + 1)
+			jmp()
+		end
+		
+	--------
+		if index == 2 then
+			
+			
+		end
+		
+		
+	--------
+		if index == 3 then
+			
+			
+	    end
+		
+	
+	    
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		if chotxt.Text == "1" then
+			moveToNextWaypoint(1)
+		end
+	  
+	end)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	--jump script
+	local player = game.Players.LocalPlayer
+	--jmp function use jmp() to fire function
+	function jmp()
+		
+		local character = player.Character or player.CharacterAdded:Wait()
+		
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		
+	    if humanoid then
+			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			
+			
+		
+	end
+	end
+	
+	function unloop()
+		
+	end
+	
+	while true do
+		wait(0.1)
+		while loopjmp do
+			wait(0.65)--jump delay normal to 0.65 fast if want slow change it to 1
+			jmp()
+		end
+		
+	end
+end;
+task.spawn(C_18);
+
+return G2L["1"], require;
