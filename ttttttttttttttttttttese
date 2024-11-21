@@ -396,7 +396,16 @@ local script = G2L["18"];
 	end
 	
 	function tp()
-		UserInputService.InputBegan:Fire(Enum.UserInputType.Keyboard, false, Enum.KeyCode.E)
+	
+	    -- Simulate pressing the "E" key
+		UserInputService.InputBegan:Fire(Enum.KeyCode.E)
+	    -- Hold the key for 1 second
+	    task.wait(1)
+	    -- Simulate releasing the "E" key
+	    UserInputService.InputEnded:Fire(Enum.KeyCode.E)
+	    -- Wait for 1 second before the next press
+	    task.wait(1)
+	
 	end
 	
 	
