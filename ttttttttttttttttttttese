@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 30 | Scripts: 7 | Modules: 0 | Tags: 0
+-- Instances: 69 | Scripts: 17 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.cheat uix
@@ -129,7 +129,7 @@ G2L["12"] = Instance.new("LocalScript", G2L["11"]);
 
 
 
--- StarterGui.cheat uix.al.Frame
+-- StarterGui.cheat uix.al.auto
 G2L["13"] = Instance.new("Frame", G2L["2"]);
 G2L["13"]["ZIndex"] = 11;
 G2L["13"]["BorderSizePixel"] = 0;
@@ -137,20 +137,21 @@ G2L["13"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["13"]["Size"] = UDim2.new(0.80641, 0, 0.0888, 0);
 G2L["13"]["Position"] = UDim2.new(0.07138, 0, 0.8598, 0);
 G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Name"] = [[auto]];
 G2L["13"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.cheat uix.al.Frame.UICorner
+-- StarterGui.cheat uix.al.auto.UICorner
 G2L["14"] = Instance.new("UICorner", G2L["13"]);
 
 
 
--- StarterGui.cheat uix.al.Frame.UIStroke
+-- StarterGui.cheat uix.al.auto.UIStroke
 G2L["15"] = Instance.new("UIStroke", G2L["13"]);
 G2L["15"]["Color"] = Color3.fromRGB(0, 255, 255);
 
 
--- StarterGui.cheat uix.al.Frame.TextButton
+-- StarterGui.cheat uix.al.auto.TextButton
 G2L["16"] = Instance.new("TextButton", G2L["13"]);
 G2L["16"]["TextWrapped"] = true;
 G2L["16"]["BorderSizePixel"] = 0;
@@ -166,19 +167,19 @@ G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["16"]["Text"] = [[Auto (CLICK HERE TO START)]];
 
 
--- StarterGui.cheat uix.al.Frame.TextButton.MakePlayerJumpOnClick
+-- StarterGui.cheat uix.al.auto.TextButton.MakePlayerJumpOnClick
 G2L["17"] = Instance.new("LocalScript", G2L["16"]);
 G2L["17"]["Enabled"] = false;
 G2L["17"]["Name"] = [[MakePlayerJumpOnClick]];
 G2L["17"]["Disabled"] = true;
 
 
--- StarterGui.cheat uix.al.Frame.TextButton.MovePlayerOnClick
+-- StarterGui.cheat uix.al.auto.TextButton.MovePlayerOnClick
 G2L["18"] = Instance.new("LocalScript", G2L["16"]);
 G2L["18"]["Name"] = [[MovePlayerOnClick]];
 
 
--- StarterGui.cheat uix.al.Frame.TextButton.Frame
+-- StarterGui.cheat uix.al.auto.TextButton.Frame
 G2L["19"] = Instance.new("Frame", G2L["16"]);
 G2L["19"]["ZIndex"] = 11;
 G2L["19"]["BorderSizePixel"] = 0;
@@ -189,17 +190,17 @@ G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["19"]["BackgroundTransparency"] = 0.5;
 
 
--- StarterGui.cheat uix.al.Frame.TextButton.Frame.UICorner
+-- StarterGui.cheat uix.al.auto.TextButton.Frame.UICorner
 G2L["1a"] = Instance.new("UICorner", G2L["19"]);
 
 
 
--- StarterGui.cheat uix.al.Frame.TextButton.Frame.UIStroke
+-- StarterGui.cheat uix.al.auto.TextButton.Frame.UIStroke
 G2L["1b"] = Instance.new("UIStroke", G2L["19"]);
 G2L["1b"]["Color"] = Color3.fromRGB(0, 255, 255);
 
 
--- StarterGui.cheat uix.al.Frame.TextButton.Frame.TextBox
+-- StarterGui.cheat uix.al.auto.TextButton.Frame.TextBox
 G2L["1c"] = Instance.new("TextBox", G2L["19"]);
 G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 243, 255);
 G2L["1c"]["ZIndex"] = 11;
@@ -211,24 +212,358 @@ G2L["1c"]["TextScaled"] = true;
 G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["1c"]["RichText"] = true;
-G2L["1c"]["PlaceholderText"] = [[paste state 1-100 if you want to auto play or skip]];
+G2L["1c"]["PlaceholderText"] = [[paste state 1-10 if you want to auto play or skip]];
 G2L["1c"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1c"]["Text"] = [[]];
 G2L["1c"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.cheat uix.al.Frame.TextButton.Frame.TextBox.UIPadding
+-- StarterGui.cheat uix.al.auto.TextButton.Frame.TextBox.UIPadding
 G2L["1d"] = Instance.new("UIPadding", G2L["1c"]);
 G2L["1d"]["PaddingTop"] = UDim.new(0, 10);
 G2L["1d"]["PaddingBottom"] = UDim.new(0, 10);
 
 
+-- StarterGui.cheat uix.al.thai
+G2L["1e"] = Instance.new("Frame", G2L["2"]);
+G2L["1e"]["ZIndex"] = 11;
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Size"] = UDim2.new(0.13387, 0, 0.06968, 0);
+G2L["1e"]["Position"] = UDim2.new(0.85464, 0, 0.13327, 0);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Name"] = [[thai]];
+G2L["1e"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.cheat uix.al.thai.UICorner
+G2L["1f"] = Instance.new("UICorner", G2L["1e"]);
+
+
+
+-- StarterGui.cheat uix.al.thai.UIStroke
+G2L["20"] = Instance.new("UIStroke", G2L["1e"]);
+G2L["20"]["Color"] = Color3.fromRGB(0, 255, 255);
+
+
+-- StarterGui.cheat uix.al.thai.TextButton
+G2L["21"] = Instance.new("TextButton", G2L["1e"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["TextScaled"] = true;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["21"]["ZIndex"] = 12;
+G2L["21"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["21"]["BackgroundTransparency"] = 1;
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[ไทย]];
+
+
+-- StarterGui.cheat uix.al.thai.TextButton.MakePlayerJumpOnClick
+G2L["22"] = Instance.new("LocalScript", G2L["21"]);
+G2L["22"]["Enabled"] = false;
+G2L["22"]["Name"] = [[MakePlayerJumpOnClick]];
+G2L["22"]["Disabled"] = true;
+
+
+-- StarterGui.cheat uix.al.thai.TextButton.MovePlayerOnClick
+G2L["23"] = Instance.new("LocalScript", G2L["21"]);
+G2L["23"]["Name"] = [[MovePlayerOnClick]];
+
+
+-- StarterGui.cheat uix.al.eng
+G2L["24"] = Instance.new("Frame", G2L["2"]);
+G2L["24"]["ZIndex"] = 11;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Size"] = UDim2.new(0.14207, 0, 0.06968, 0);
+G2L["24"]["Position"] = UDim2.new(0.70154, 0, 0.13327, 0);
+G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Name"] = [[eng]];
+G2L["24"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.cheat uix.al.eng.UICorner
+G2L["25"] = Instance.new("UICorner", G2L["24"]);
+
+
+
+-- StarterGui.cheat uix.al.eng.UIStroke
+G2L["26"] = Instance.new("UIStroke", G2L["24"]);
+G2L["26"]["Color"] = Color3.fromRGB(0, 255, 255);
+
+
+-- StarterGui.cheat uix.al.eng.TextButton
+G2L["27"] = Instance.new("TextButton", G2L["24"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextSize"] = 14;
+G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["27"]["ZIndex"] = 12;
+G2L["27"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["27"]["BackgroundTransparency"] = 1;
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[ENG]];
+
+
+-- StarterGui.cheat uix.al.eng.TextButton.MakePlayerJumpOnClick
+G2L["28"] = Instance.new("LocalScript", G2L["27"]);
+G2L["28"]["Enabled"] = false;
+G2L["28"]["Name"] = [[MakePlayerJumpOnClick]];
+G2L["28"]["Disabled"] = true;
+
+
+-- StarterGui.cheat uix.al.eng.TextButton.th
+G2L["29"] = Instance.new("LocalScript", G2L["27"]);
+G2L["29"]["Name"] = [[th]];
+
+
+-- StarterGui.cheat uix.al.TextLabel
+G2L["2a"] = Instance.new("TextLabel", G2L["2"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["ZIndex"] = 12;
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a"]["TextColor3"] = Color3.fromRGB(81, 253, 255);
+G2L["2a"]["BackgroundTransparency"] = 1;
+G2L["2a"]["Size"] = UDim2.new(0.67056, 0, 0.30788, 0);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Text"] = [[Loading..]];
+G2L["2a"]["Position"] = UDim2.new(0.1613, 0, 0.26767, 0);
+
+
+-- StarterGui.cheat uix.al.TextLabel.LocalScript
+G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
+
+
+
+-- StarterGui.cheat uix.al.item
+G2L["2c"] = Instance.new("Frame", G2L["2"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Size"] = UDim2.new(0.19904, 0, 0.84196, 0);
+G2L["2c"]["Position"] = UDim2.new(1.0356, 0, 0.15804, 0);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Name"] = [[item]];
+G2L["2c"]["BackgroundTransparency"] = 0.5;
+
+
+-- StarterGui.cheat uix.al.item.UIStroke
+G2L["2d"] = Instance.new("UIStroke", G2L["2c"]);
+G2L["2d"]["Color"] = Color3.fromRGB(0, 255, 255);
+
+
+-- StarterGui.cheat uix.al.item.UICorner
+G2L["2e"] = Instance.new("UICorner", G2L["2c"]);
+
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame
+G2L["2f"] = Instance.new("ScrollingFrame", G2L["2c"]);
+G2L["2f"]["Active"] = true;
+G2L["2f"]["BorderSizePixel"] = 0;
+G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2f"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2f"]["ScrollBarThickness"] = 0;
+G2L["2f"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab
+G2L["30"] = Instance.new("Frame", G2L["2f"]);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Name"] = [[tab]];
+G2L["30"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp
+G2L["31"] = Instance.new("Frame", G2L["30"]);
+G2L["31"]["ZIndex"] = 13;
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Size"] = UDim2.new(1, 0, 0.06664, 0);
+G2L["31"]["Position"] = UDim2.new(0, 0, 0, 0);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Name"] = [[hp]];
+G2L["31"]["BackgroundTransparency"] = 0.6;
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp.UICorner
+G2L["32"] = Instance.new("UICorner", G2L["31"]);
+
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp.UIStroke
+G2L["33"] = Instance.new("UIStroke", G2L["31"]);
+G2L["33"]["Color"] = Color3.fromRGB(0, 255, 255);
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp.TextButton
+G2L["34"] = Instance.new("TextButton", G2L["31"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["ZIndex"] = 14;
+G2L["34"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["34"]["BackgroundTransparency"] = 1;
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[Loading.]];
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp.TextButton.LocalScript
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.UIListLayout
+G2L["36"] = Instance.new("UIListLayout", G2L["30"]);
+G2L["36"]["Padding"] = UDim.new(0, 10);
+G2L["36"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm
+G2L["37"] = Instance.new("Frame", G2L["30"]);
+G2L["37"]["ZIndex"] = 13;
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Size"] = UDim2.new(1, 0, 0.06664, 0);
+G2L["37"]["Position"] = UDim2.new(0, 0, 0, 0);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Name"] = [[bbm]];
+G2L["37"]["BackgroundTransparency"] = 0.6;
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm.UICorner
+G2L["38"] = Instance.new("UICorner", G2L["37"]);
+
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm.UIStroke
+G2L["39"] = Instance.new("UIStroke", G2L["37"]);
+G2L["39"]["Color"] = Color3.fromRGB(0, 255, 255);
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm.TextButton
+G2L["3a"] = Instance.new("TextButton", G2L["37"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a"]["ZIndex"] = 14;
+G2L["3a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["3a"]["BackgroundTransparency"] = 1;
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[Loading.]];
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm.TextButton.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
+
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver
+G2L["3c"] = Instance.new("Frame", G2L["30"]);
+G2L["3c"]["ZIndex"] = 13;
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Size"] = UDim2.new(1, 0, 0.06664, 0);
+G2L["3c"]["Position"] = UDim2.new(0, 0, 0, 0);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Name"] = [[giver]];
+G2L["3c"]["BackgroundTransparency"] = 0.6;
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver.UICorner
+G2L["3d"] = Instance.new("UICorner", G2L["3c"]);
+
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver.UIStroke
+G2L["3e"] = Instance.new("UIStroke", G2L["3c"]);
+G2L["3e"]["Color"] = Color3.fromRGB(0, 255, 255);
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver.TextButton
+G2L["3f"] = Instance.new("TextButton", G2L["3c"]);
+G2L["3f"]["TextWrapped"] = true;
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["TextSize"] = 14;
+G2L["3f"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
+G2L["3f"]["TextScaled"] = true;
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3f"]["ZIndex"] = 14;
+G2L["3f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["3f"]["BackgroundTransparency"] = 1;
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Text"] = [[Loading.]];
+
+
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver.TextButton.LocalScript
+G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
+
+
+
+-- StarterGui.cheat uix.al.item.TextLabel
+G2L["41"] = Instance.new("TextLabel", G2L["2c"]);
+G2L["41"]["TextWrapped"] = true;
+G2L["41"]["TextStrokeTransparency"] = 0;
+G2L["41"]["BorderSizePixel"] = 0;
+G2L["41"]["TextStrokeColor3"] = Color3.fromRGB(119, 119, 119);
+G2L["41"]["TextScaled"] = true;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["TextSize"] = 14;
+G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["BackgroundTransparency"] = 1;
+G2L["41"]["Size"] = UDim2.new(1.08241, 0, 0.10548, 0);
+G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["Text"] = [[ITEM GIVER]];
+G2L["41"]["Position"] = UDim2.new(-0.04807, 0, -0.10775, 0);
+
+
+-- StarterGui.cheat uix.al.item.TextLabel.LocalScript
+G2L["42"] = Instance.new("LocalScript", G2L["41"]);
+
+
+
+-- StarterGui.cheat uix.al.item.TextLabel.UIGradient
+G2L["43"] = Instance.new("UIGradient", G2L["41"]);
+G2L["43"]["Offset"] = Vector2.new(0, 2);
+G2L["43"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(50, 255, 255)),ColorSequenceKeypoint.new(0.334, Color3.fromRGB(42, 148, 255)),ColorSequenceKeypoint.new(0.478, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.626, Color3.fromRGB(38, 96, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(31, 0, 255))};
+
+
+-- StarterGui.cheat uix.al.item.TextLabel.UIGradient.LocalScript
+G2L["44"] = Instance.new("LocalScript", G2L["43"]);
+
+
+
 -- StarterGui.cheat uix.PrintNumbers
-G2L["1e"] = Instance.new("LocalScript", G2L["1"]);
-G2L["1e"]["Enabled"] = false;
-G2L["1e"]["Name"] = [[PrintNumbers]];
-G2L["1e"]["Disabled"] = true;
+G2L["45"] = Instance.new("LocalScript", G2L["1"]);
+G2L["45"]["Enabled"] = false;
+G2L["45"]["Name"] = [[PrintNumbers]];
+G2L["45"]["Disabled"] = true;
 
 
 -- StarterGui.cheat uix.al.UIStroke.UIGradient.LocalScript
@@ -308,7 +643,7 @@ local script = G2L["12"];
 	end
 end;
 task.spawn(C_12);
--- StarterGui.cheat uix.al.Frame.TextButton.MovePlayerOnClick
+-- StarterGui.cheat uix.al.auto.TextButton.MovePlayerOnClick
 local function C_18()
 local script = G2L["18"];
 	local UserInputService = game:GetService("UserInputService")
@@ -396,20 +731,193 @@ local script = G2L["18"];
 	end
 	
 	function tp()
-	
-	    -- Simulate pressing the "E" key
-		UserInputService.InputBegan:Fire(Enum.KeyCode.E)
-	    -- Hold the key for 1 second
-	    task.wait(1)
-	    -- Simulate releasing the "E" key
-	    UserInputService.InputEnded:Fire(Enum.KeyCode.E)
-	    -- Wait for 1 second before the next press
-	    task.wait(1)
-	
+		game.Players.LocalPlayer.Character.HumanoidRootPart.Cframe = CFrame.new(-738.9210815429688, 135.5248565673828, 747.814208984375)
 	end
 	
 	
 end;
 task.spawn(C_18);
+-- StarterGui.cheat uix.al.thai.TextButton.MovePlayerOnClick
+local function C_23()
+local script = G2L["23"];
+	local th = script.Parent.Parent.Parent.Parent.al.auto.TextButton
+	local thc = script.Parent.Parent.Parent.Parent.al.auto.TextButton.Frame.TextBox
+	local thv = script.Parent.Parent.Parent.TextLabel
+	local touch = script.Parent
+	
+	touch.MouseButton1Click:Connect(function()
+		th.Text = "ออโต้ต้นถั่ว(กดตรงนี้เพิ่อออโต้หรือผ่านอัตโนมัติ)"
+		thc.PlaceholderText = "ต้องการผ่านชั้นไหน 1-10 เอาเลขชั้นมาใส่ในนี้"
+		thv.Text = "อันดับแรกให้ไปที่ต้นถั่วก่อนค่อยออโต้(ถ้าเปิดในล็อบบี้จะบัค)"
+	end)
+	
+	
+end;
+task.spawn(C_23);
+-- StarterGui.cheat uix.al.eng.TextButton.th
+local function C_29()
+local script = G2L["29"];
+	local eng = script.Parent.Parent.Parent.Parent.al.auto.TextButton
+	local engc = script.Parent.Parent.Parent.Parent.al.auto.TextButton.Frame.TextBox
+	local	engv = script.Parent.Parent.Parent.TextLabel
+	local touch = script.Parent
+	
+	touch.MouseButton1Click:Connect(function()
+		eng.Text = "Auto (CLICK HERE TO START)"
+		engc.PlaceholderText = "paste state 1-10 if you want to auto play or skip"
+		engv.Text = "if you in lobby go to teleport to tree first for auto!(bug in lobby)"
+	end)
+	
+	
+	
+end;
+task.spawn(C_29);
+-- StarterGui.cheat uix.al.TextLabel.LocalScript
+local function C_2b()
+local script = G2L["2b"];
+	wait(0.1)
+	script.Parent.Text = "if you in lobby go to teleport to tree first for auto!(bug in lobby)"
+end;
+task.spawn(C_2b);
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp.TextButton.LocalScript
+local function C_35()
+local script = G2L["35"];
+	local scgive = script.Parent
+	
+	
+	scgive.MouseButton1Click:Connect(function()
+		
+		runc()
+		
+	end)
+	
+	
+	
+	
+	
+	
+	
+	
+	function runc()
+	--.-----------------------------------------
+	
+		local args = {
+	    [1] = "Change",
+	    [2] = "ผ้าพันแผล",
+		[3] = "Inv"
+		}
+		
+		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
+		
+	--.-----------------------------------------
+		
+	end
+	
+	
+	----NAME BUTTOn--
+	scgive.Text = "HEALTH"
+	----NAME BUTTOn--
+end;
+task.spawn(C_35);
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm.TextButton.LocalScript
+local function C_3b()
+local script = G2L["3b"];
+	local scgive = script.Parent
+	
+	
+	scgive.MouseButton1Click:Connect(function()
+		
+		runc()
+		
+	end)
+	
+	
+	
+	
+	
+	
+	
+	
+	function runc()
+	--.-----------------------------------------
+	
+		local args = {
+	    [1] = "Change",
+	    [2] = "Boombox",
+		[3] = "Inv"
+		}
+		
+		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
+		
+	--.-----------------------------------------
+		
+	end
+	
+	
+	----NAME BUTTOn--
+	scgive.Text = "Boombox"
+	----NAME BUTTOn--
+end;
+task.spawn(C_3b);
+-- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver.TextButton.LocalScript
+local function C_40()
+local script = G2L["40"];
+	local scgive = script.Parent
+	
+	
+	scgive.MouseButton1Click:Connect(function()
+		
+		runc()
+		
+	end)
+	
+	
+	
+	
+	
+	
+	
+	
+	function runc()
+	--.-----------------------------------------
+	
+		local args = {
+	    [1] = "Change",
+	    [2] = "Boombox",
+		[3] = "Inv"
+		}
+		
+		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
+		
+	--.-----------------------------------------
+		
+	end
+	
+	
+	----NAME BUTTOn--
+	scgive.Text = "Boombox"
+	----NAME BUTTOn--
+end;
+task.spawn(C_40);
+-- StarterGui.cheat uix.al.item.TextLabel.LocalScript
+local function C_42()
+local script = G2L["42"];
+	while true do
+		wait()
+		script.Parent.TextTransparency = 0.5
+		wait()
+		script.Parent.TextTransparency = 0
+	end
+end;
+task.spawn(C_42);
+-- StarterGui.cheat uix.al.item.TextLabel.UIGradient.LocalScript
+local function C_44()
+local script = G2L["44"];
+	while true do
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_44);
 
 return G2L["1"], require;
