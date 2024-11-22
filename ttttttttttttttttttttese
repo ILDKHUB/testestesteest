@@ -701,7 +701,7 @@ G2L["54"]["TextColor3"] = Color3.fromRGB(81, 253, 255);
 G2L["54"]["BackgroundTransparency"] = 1;
 G2L["54"]["Size"] = UDim2.new(0.18803, 0, 0.0861, 0);
 G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["54"]["Text"] = [[v1.1.2]];
+G2L["54"]["Text"] = [[0.0.0.0.0.0]];
 G2L["54"]["Position"] = UDim2.new(-0.18864, 0, 0.9139, 0);
 
 
@@ -1194,7 +1194,7 @@ task.spawn(C_53);
 local function C_55()
 local script = G2L["55"];
 	wait(0.1)
-	script.Parent.Text = "if you in lobby go to teleport to tree first for auto!(bug in lobby)"
+	script.Parent.Text = "v1.1.3"
 end;
 task.spawn(C_55);
 
