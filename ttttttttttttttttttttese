@@ -1034,7 +1034,7 @@ local script = G2L["40"];
 	
 		local args = {
 	    [1] = "Change",
-	    [2] = "Sword",
+	    [2] = "sword",
 		[3] = "Inv"
 		}
 		
@@ -1074,7 +1074,7 @@ local script = G2L["45"];
 	
 		local args = {
 	    [1] = "Change",
-	    [2] = "ThechaosEdge",
+	    [2] = "TheChaosEdge",
 		[3] = "Inv"
 		}
 		
