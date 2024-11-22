@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 69 | Scripts: 17 | Modules: 0 | Tags: 0
+-- Instances: 71 | Scripts: 18 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.cheat uix
@@ -559,11 +559,33 @@ G2L["44"] = Instance.new("LocalScript", G2L["43"]);
 
 
 
+-- StarterGui.cheat uix.al.TextLabel
+G2L["45"] = Instance.new("TextLabel", G2L["2"]);
+G2L["45"]["TextWrapped"] = true;
+G2L["45"]["ZIndex"] = 12;
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["TextScaled"] = true;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["TextSize"] = 14;
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["45"]["TextColor3"] = Color3.fromRGB(81, 253, 255);
+G2L["45"]["BackgroundTransparency"] = 1;
+G2L["45"]["Size"] = UDim2.new(0.18803, 0, 0.0861, 0);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Text"] = [[v1.1.2]];
+G2L["45"]["Position"] = UDim2.new(-0.18864, 0, 0.9139, 0);
+
+
+-- StarterGui.cheat uix.al.TextLabel.LocalScript
+G2L["46"] = Instance.new("LocalScript", G2L["45"]);
+
+
+
 -- StarterGui.cheat uix.PrintNumbers
-G2L["45"] = Instance.new("LocalScript", G2L["1"]);
-G2L["45"]["Enabled"] = false;
-G2L["45"]["Name"] = [[PrintNumbers]];
-G2L["45"]["Disabled"] = true;
+G2L["47"] = Instance.new("LocalScript", G2L["1"]);
+G2L["47"]["Enabled"] = false;
+G2L["47"]["Name"] = [[PrintNumbers]];
+G2L["47"]["Disabled"] = true;
 
 
 -- StarterGui.cheat uix.al.UIStroke.UIGradient.LocalScript
@@ -919,5 +941,12 @@ local script = G2L["44"];
 	end
 end;
 task.spawn(C_44);
+-- StarterGui.cheat uix.al.TextLabel.LocalScript
+local function C_46()
+local script = G2L["46"];
+	wait(0.1)
+	script.Parent.Text = "if you in lobby go to teleport to tree first for auto!(bug in lobby)"
+end;
+task.spawn(C_46);
 
 return G2L["1"], require;
