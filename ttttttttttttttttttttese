@@ -895,20 +895,31 @@ local script = G2L["18"];
 			moveToNextWaypoint(index + 1)
 	    end	
 		if index == 6 then
-			
+			moveToNextWaypoint(index + 1)
 	    end	
 		if index == 7 then
-			
+			moveToNextWaypoint(index + 1)
 	    end	
 		if index == 8 then
-			
+			moveToNextWaypoint(index + 1)
 		end	
 		if index == 9 then
-			
+			moveToNextWaypoint(index + 1)
 	    end	
 		if index == 10 then
-			
+			moveToNextWaypoint(index + 1)
 	    end	
+
+	    end	
+		if index == 11 then
+			moveToNextWaypoint(index + 1)
+	    end	
+
+	    end	
+		if index == 12 then
+			moveToNextWaypoint(index + 1)
+	    end	
+
 	end
 	
 	button.MouseButton1Click:Connect(function()
