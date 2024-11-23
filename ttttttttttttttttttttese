@@ -815,7 +815,11 @@ local script = G2L["18"];
 	local waypoints1 = {
 		CFrame.new(-820.6841430664062, 66.43312072753906, 784.951171875),
 		CFrame.new(-1005.2112426757812, 458.7128601074219, 1090.3883056640625),
-		CFrame.new(-991.9859619140625, 473.0061340332031, 1110.4892578125)
+		CFrame.new(-1005.2112426757812, 458.7128601074219, 1090.3883056640625)
+		
+		
+		
+		
 	}
 	
 	local function moveToNextWaypoint(index)
@@ -829,27 +833,36 @@ local script = G2L["18"];
 	
 	    if index == 1 then
 	        moveToNextWaypoint(index + 1)
-	        tp()
+	        
 	    end
 	
-	    if index == 2 then
+		if index == 2 then
+			moveToNextWaypoint(index + 1)
 	    end
 	
-	    if index == 3 then
+		if index == 3 then
+			moveToNextWaypoint(index + 1)
 		end
-	    if index == 4 then
+		if index == 4 then
+			moveToNextWaypoint(index + 1)
 	    end
-	    if index == 5 then
+		if index == 5 then
+			moveToNextWaypoint(index + 1)
 	    end	
-	    if index == 6 then
+		if index == 6 then
+			
 	    end	
-	    if index == 7 then
+		if index == 7 then
+			
 	    end	
-	    if index == 8 then
+		if index == 8 then
+			
 		end	
-	    if index == 9 then
+		if index == 9 then
+			
 	    end	
-	    if index == 10 then
+		if index == 10 then
+			
 	    end	
 	end
 	
