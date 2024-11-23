@@ -1320,7 +1320,7 @@ task.spawn(C_53);
 local function C_55()
 local script = G2L["55"];
 	wait(0.1)
-	script.Parent.Text = "v1.1.4"
+	script.Parent.Text = "v1.1.4.0"
 end;
 task.spawn(C_55);
 
