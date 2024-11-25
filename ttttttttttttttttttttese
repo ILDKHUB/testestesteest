@@ -895,31 +895,20 @@ local script = G2L["18"];
 			moveToNextWaypoint(index + 1)
 	    end	
 		if index == 6 then
-			moveToNextWaypoint(index + 1)
+			
 	    end	
 		if index == 7 then
-			moveToNextWaypoint(index + 1)
+			
 	    end	
 		if index == 8 then
-			moveToNextWaypoint(index + 1)
+			
 		end	
 		if index == 9 then
-			moveToNextWaypoint(index + 1)
+			
 	    end	
 		if index == 10 then
-			moveToNextWaypoint(index + 1)
+			
 	    end	
-
-	    end	
-		if index == 11 then
-			moveToNextWaypoint(index + 1)
-	    end	
-
-	    end	
-		if index == 12 then
-			moveToNextWaypoint(index + 1)
-	    end	
-
 	end
 	
 	button.MouseButton1Click:Connect(function()
@@ -1320,7 +1309,7 @@ task.spawn(C_53);
 local function C_55()
 local script = G2L["55"];
 	wait(0.1)
-	script.Parent.Text = "v1.1.4.0"
+	script.Parent.Text = "v1.1.3"
 end;
 task.spawn(C_55);
 
