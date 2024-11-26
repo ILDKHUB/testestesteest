@@ -1,3 +1,11 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
 -- Instances: 205 | Scripts: 83 | Modules: 0 | Tags: 0
 local G2L = {};
@@ -364,7 +372,6 @@ G2L["33"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab1
 G2L["34"] = Instance.new("Frame", G2L["33"]);
-G2L["34"]["Visible"] = false;
 G2L["34"]["BorderSizePixel"] = 0;
 G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["34"]["Size"] = UDim2.new(1, 0, 1, 0);
@@ -1264,6 +1271,7 @@ G2L["a7"] = Instance.new("LocalScript", G2L["a6"]);
 
 -- StarterGui.modmenu.menu.fi.tab.showtab.tab3
 G2L["a8"] = Instance.new("Frame", G2L["33"]);
+G2L["a8"]["Visible"] = false;
 G2L["a8"]["BorderSizePixel"] = 0;
 G2L["a8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a8"]["Size"] = UDim2.new(1, 0, 1, 0);
