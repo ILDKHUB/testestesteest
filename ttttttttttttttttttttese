@@ -7,248 +7,227 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 86 | Scripts: 21 | Modules: 0 | Tags: 0
+-- Instances: 156 | Scripts: 58 | Modules: 0 | Tags: 0
 local G2L = {};
 
--- StarterGui.cheat uix
+-- StarterGui.modmenu
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Name"] = [[cheat uix]];
+G2L["1"]["Name"] = [[modmenu]];
 
 
--- StarterGui.cheat uix.al
-G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["ZIndex"] = 10;
+-- StarterGui.modmenu.ic
+G2L["2"] = Instance.new("ImageButton", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Size"] = UDim2.new(0.64625, 0, 0.80965, 0);
-G2L["2"]["Position"] = UDim2.new(0.176, 0, -0.09475, 0);
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["ZIndex"] = 1000000;
+G2L["2"]["Image"] = [[http://www.roblox.com/asset/?id=118116050473564]];
+G2L["2"]["Size"] = UDim2.new(0.11412, 0, 0.16827, 0);
+G2L["2"]["Name"] = [[ic]];
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Name"] = [[al]];
-G2L["2"]["BackgroundTransparency"] = 0.65;
+G2L["2"]["Position"] = UDim2.new(0.02609, 0, 0.07692, 0);
 
 
--- StarterGui.cheat uix.al.UICorner
-G2L["3"] = Instance.new("UICorner", G2L["2"]);
-
-
-
--- StarterGui.cheat uix.al.UIStroke
-G2L["4"] = Instance.new("UIStroke", G2L["2"]);
-G2L["4"]["Color"] = Color3.fromRGB(255, 255, 255);
-
-
--- StarterGui.cheat uix.al.UIStroke.UIGradient
-G2L["5"] = Instance.new("UIGradient", G2L["4"]);
-G2L["5"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.270, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.474, Color3.fromRGB(0, 255, 226)),ColorSequenceKeypoint.new(0.671, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
-
--- StarterGui.cheat uix.al.UIStroke.UIGradient.LocalScript
-G2L["6"] = Instance.new("LocalScript", G2L["5"]);
+-- StarterGui.modmenu.ic.UIAspectRatioConstraint
+G2L["3"] = Instance.new("UIAspectRatioConstraint", G2L["2"]);
 
 
 
--- StarterGui.cheat uix.al.tgt
-G2L["7"] = Instance.new("Frame", G2L["2"]);
-G2L["7"]["ZIndex"] = 10;
-G2L["7"]["BorderSizePixel"] = 0;
-G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Size"] = UDim2.new(0.09873, 0, 0.15237, 0);
-G2L["7"]["Position"] = UDim2.new(0.44796, 0, 1.05639, 0);
-G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Name"] = [[tgt]];
-G2L["7"]["Rotation"] = -180;
-G2L["7"]["BackgroundTransparency"] = 0.65;
+-- StarterGui.modmenu.ic.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["2"]);
+G2L["4"]["CornerRadius"] = UDim.new(0, 100);
 
 
--- StarterGui.cheat uix.al.tgt.UICorner
-G2L["8"] = Instance.new("UICorner", G2L["7"]);
+-- StarterGui.modmenu.ic.UIStroke
+G2L["5"] = Instance.new("UIStroke", G2L["2"]);
+G2L["5"]["Thickness"] = 2.2;
+G2L["5"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
-
--- StarterGui.cheat uix.al.tgt.UIStroke
-G2L["9"] = Instance.new("UIStroke", G2L["7"]);
-G2L["9"]["Color"] = Color3.fromRGB(255, 255, 255);
-
-
--- StarterGui.cheat uix.al.tgt.UIStroke.UIGradient
-G2L["a"] = Instance.new("UIGradient", G2L["9"]);
-G2L["a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.535, Color3.fromRGB(0, 255, 226)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+-- StarterGui.modmenu.ic.UIStroke.UIGradient
+G2L["6"] = Instance.new("UIGradient", G2L["5"]);
+G2L["6"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
--- StarterGui.cheat uix.al.tgt.UIStroke.UIGradient.LocalScript
-G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+-- StarterGui.modmenu.ic.UIStroke.UIGradient.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
 
 
 
--- StarterGui.cheat uix.al.tgt.UIAspectRatioConstraint
-G2L["c"] = Instance.new("UIAspectRatioConstraint", G2L["7"]);
+-- StarterGui.modmenu.ic.nove
+G2L["8"] = Instance.new("LocalScript", G2L["2"]);
+G2L["8"]["Name"] = [[nove]];
+
+
+-- StarterGui.modmenu.ic.togg
+G2L["9"] = Instance.new("LocalScript", G2L["2"]);
+G2L["9"]["Name"] = [[togg]];
+
+
+-- StarterGui.modmenu.ic.ron
+G2L["a"] = Instance.new("Sound", G2L["2"]);
+G2L["a"]["Volume"] = 2.125;
+G2L["a"]["Name"] = [[ron]];
+G2L["a"]["SoundId"] = [[rbxassetid://17208220181]];
+
+
+-- StarterGui.modmenu.ic.roof
+G2L["b"] = Instance.new("Sound", G2L["2"]);
+G2L["b"]["Volume"] = 2.125;
+G2L["b"]["Name"] = [[roof]];
+G2L["b"]["SoundId"] = [[rbxassetid://17208372272]];
+
+
+-- StarterGui.modmenu.menu
+G2L["c"] = Instance.new("Frame", G2L["1"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Size"] = UDim2.new(0.54609, 0, 0.15224, 0);
+G2L["c"]["Position"] = UDim2.new(0.22696, 0, 0.11378, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[menu]];
+G2L["c"]["BackgroundTransparency"] = 0.35;
+
+
+-- StarterGui.modmenu.menu.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+G2L["d"]["CornerRadius"] = UDim.new(0, 0);
+
+
+-- StarterGui.modmenu.menu.UIStroke
+G2L["e"] = Instance.new("UIStroke", G2L["c"]);
+G2L["e"]["Thickness"] = 1.05;
+G2L["e"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.UIStroke.UIGradient
+G2L["f"] = Instance.new("UIGradient", G2L["e"]);
+G2L["f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.UIStroke.UIGradient.LocalScript
+G2L["10"] = Instance.new("LocalScript", G2L["f"]);
 
 
 
--- StarterGui.cheat uix.al.tgt.TextButton
-G2L["d"] = Instance.new("TextButton", G2L["7"]);
-G2L["d"]["TextWrapped"] = true;
-G2L["d"]["BorderSizePixel"] = 0;
-G2L["d"]["TextSize"] = 14;
-G2L["d"]["TextColor3"] = Color3.fromRGB(2, 252, 255);
-G2L["d"]["TextScaled"] = true;
-G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["d"]["ZIndex"] = 11;
-G2L["d"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["d"]["BackgroundTransparency"] = 1;
-G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["d"]["Text"] = [[△]];
-G2L["d"]["Rotation"] = -180;
+-- StarterGui.modmenu.menu.fi
+G2L["11"] = Instance.new("Frame", G2L["c"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Size"] = UDim2.new(1.00018, 0, 3.92857, 0);
+G2L["11"]["Position"] = UDim2.new(-0.00018, 0, 1.16667, 0);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Name"] = [[fi]];
+G2L["11"]["BackgroundTransparency"] = 0.35;
 
 
--- StarterGui.cheat uix.al.tgt.TextButton.UIPadding
-G2L["e"] = Instance.new("UIPadding", G2L["d"]);
-G2L["e"]["PaddingTop"] = UDim.new(0, 5);
-G2L["e"]["PaddingBottom"] = UDim.new(0, 10);
+-- StarterGui.modmenu.menu.fi.UICorner
+G2L["12"] = Instance.new("UICorner", G2L["11"]);
+G2L["12"]["CornerRadius"] = UDim.new(0, 0);
 
 
--- StarterGui.cheat uix.al.tgt.TextButton.LocalScript
-G2L["f"] = Instance.new("LocalScript", G2L["d"]);
+-- StarterGui.modmenu.menu.fi.UIStroke
+G2L["13"] = Instance.new("UIStroke", G2L["11"]);
+G2L["13"]["Thickness"] = 1.05;
+G2L["13"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
-
--- StarterGui.cheat uix.al.tgt.TextButton.UIStroke
-G2L["10"] = Instance.new("UIStroke", G2L["d"]);
-G2L["10"]["Thickness"] = 4;
-G2L["10"]["Color"] = Color3.fromRGB(255, 255, 255);
+-- StarterGui.modmenu.menu.fi.UIStroke.UIGradient
+G2L["14"] = Instance.new("UIGradient", G2L["13"]);
+G2L["14"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
--- StarterGui.cheat uix.al.tgt.TextButton.UIStroke.UIGradient
-G2L["11"] = Instance.new("UIGradient", G2L["10"]);
-G2L["11"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.375, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.535, Color3.fromRGB(0, 255, 226)),ColorSequenceKeypoint.new(0.692, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
-
-
--- StarterGui.cheat uix.al.tgt.TextButton.UIStroke.UIGradient.LocalScript
-G2L["12"] = Instance.new("LocalScript", G2L["11"]);
+-- StarterGui.modmenu.menu.fi.UIStroke.UIGradient.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
 
 
 
--- StarterGui.cheat uix.al.auto
-G2L["13"] = Instance.new("Frame", G2L["2"]);
-G2L["13"]["ZIndex"] = 11;
-G2L["13"]["BorderSizePixel"] = 0;
-G2L["13"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Size"] = UDim2.new(0.80641, 0, 0.0888, 0);
-G2L["13"]["Position"] = UDim2.new(0.07138, 0, 0.8598, 0);
-G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Name"] = [[auto]];
-G2L["13"]["BackgroundTransparency"] = 0.5;
-
-
--- StarterGui.cheat uix.al.auto.UICorner
-G2L["14"] = Instance.new("UICorner", G2L["13"]);
-
-
-
--- StarterGui.cheat uix.al.auto.UIStroke
-G2L["15"] = Instance.new("UIStroke", G2L["13"]);
-G2L["15"]["Color"] = Color3.fromRGB(0, 255, 255);
-
-
--- StarterGui.cheat uix.al.auto.TextButton
-G2L["16"] = Instance.new("TextButton", G2L["13"]);
-G2L["16"]["TextWrapped"] = true;
+-- StarterGui.modmenu.menu.fi.fa
+G2L["16"] = Instance.new("Frame", G2L["11"]);
 G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["TextSize"] = 14;
-G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["TextScaled"] = true;
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["16"]["ZIndex"] = 12;
-G2L["16"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Size"] = UDim2.new(0.43322, 0, 1.00268, 0);
+G2L["16"]["Position"] = UDim2.new(0, 0, -0.00268, 0);
 G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Text"] = [[Auto (CLICK HERE TO START)]];
+G2L["16"]["Name"] = [[fa]];
+G2L["16"]["BackgroundTransparency"] = 0.75;
 
 
--- StarterGui.cheat uix.al.auto.TextButton.MakePlayerJumpOnClick
-G2L["17"] = Instance.new("LocalScript", G2L["16"]);
-G2L["17"]["Enabled"] = false;
-G2L["17"]["Name"] = [[MakePlayerJumpOnClick]];
-G2L["17"]["Disabled"] = true;
+-- StarterGui.modmenu.menu.fi.fa.UICorner
+G2L["17"] = Instance.new("UICorner", G2L["16"]);
+G2L["17"]["CornerRadius"] = UDim.new(0, 0);
 
 
--- StarterGui.cheat uix.al.auto.TextButton.MovePlayerOnClick
-G2L["18"] = Instance.new("LocalScript", G2L["16"]);
-G2L["18"]["Name"] = [[MovePlayerOnClick]];
+-- StarterGui.modmenu.menu.fi.fa.btn
+G2L["18"] = Instance.new("Frame", G2L["16"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Size"] = UDim2.new(1.00132, 0, 0.15499, 0);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Name"] = [[btn]];
+G2L["18"]["BackgroundTransparency"] = 0.55;
 
 
--- StarterGui.cheat uix.al.auto.TextButton.Frame
-G2L["19"] = Instance.new("Frame", G2L["16"]);
-G2L["19"]["ZIndex"] = 11;
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton
+G2L["19"] = Instance.new("TextButton", G2L["18"]);
+G2L["19"]["TextWrapped"] = true;
 G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Size"] = UDim2.new(0.80641, 0, 1.66061, 0);
-G2L["19"]["Position"] = UDim2.new(0.07138, 0, -2.45607, 0);
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["19"]["BackgroundTransparency"] = 1;
 G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["BackgroundTransparency"] = 0.5;
+G2L["19"]["Text"] = [[PLAYER]];
+G2L["19"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
 
 
--- StarterGui.cheat uix.al.auto.TextButton.Frame.UICorner
-G2L["1a"] = Instance.new("UICorner", G2L["19"]);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
+G2L["1a"]["Name"] = [[aim]];
 
 
-
--- StarterGui.cheat uix.al.auto.TextButton.Frame.UIStroke
-G2L["1b"] = Instance.new("UIStroke", G2L["19"]);
-G2L["1b"]["Color"] = Color3.fromRGB(0, 255, 255);
-
-
--- StarterGui.cheat uix.al.auto.TextButton.Frame.TextBox
-G2L["1c"] = Instance.new("TextBox", G2L["19"]);
-G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 243, 255);
-G2L["1c"]["ZIndex"] = 11;
-G2L["1c"]["BorderSizePixel"] = 0;
-G2L["1c"]["TextWrapped"] = true;
-G2L["1c"]["TextTransparency"] = 0.44;
-G2L["1c"]["TextSize"] = 14;
-G2L["1c"]["TextScaled"] = true;
-G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1c"]["RichText"] = true;
-G2L["1c"]["PlaceholderText"] = [[paste state 1-10 if you want to auto play or skip]];
-G2L["1c"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1c"]["Text"] = [[]];
-G2L["1c"]["BackgroundTransparency"] = 1;
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+G2L["1b"] = Instance.new("LocalScript", G2L["19"]);
+G2L["1b"]["Name"] = [[chngetan]];
 
 
--- StarterGui.cheat uix.al.auto.TextButton.Frame.TextBox.UIPadding
-G2L["1d"] = Instance.new("UIPadding", G2L["1c"]);
-G2L["1d"]["PaddingTop"] = UDim.new(0, 10);
-G2L["1d"]["PaddingBottom"] = UDim.new(0, 10);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIStroke
+G2L["1c"] = Instance.new("UIStroke", G2L["18"]);
+G2L["1c"]["Transparency"] = 0.9;
+G2L["1c"]["Thickness"] = 1.05;
+G2L["1c"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.cheat uix.al.thai
-G2L["1e"] = Instance.new("Frame", G2L["2"]);
-G2L["1e"]["ZIndex"] = 11;
-G2L["1e"]["BorderSizePixel"] = 0;
-G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Size"] = UDim2.new(0.13387, 0, 0.06968, 0);
-G2L["1e"]["Position"] = UDim2.new(0.85464, 0, 0.13327, 0);
-G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1e"]["Name"] = [[thai]];
-G2L["1e"]["BackgroundTransparency"] = 0.5;
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient
+G2L["1d"] = Instance.new("UIGradient", G2L["18"]);
+G2L["1d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
--- StarterGui.cheat uix.al.thai.UICorner
-G2L["1f"] = Instance.new("UICorner", G2L["1e"]);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+G2L["1e"] = Instance.new("LocalScript", G2L["1d"]);
 
 
 
--- StarterGui.cheat uix.al.thai.UIStroke
-G2L["20"] = Instance.new("UIStroke", G2L["1e"]);
-G2L["20"]["Color"] = Color3.fromRGB(0, 255, 255);
+-- StarterGui.modmenu.menu.fi.fa.UIListLayout
+G2L["1f"] = Instance.new("UIListLayout", G2L["16"]);
+G2L["1f"]["Padding"] = UDim.new(0, 5);
+G2L["1f"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
--- StarterGui.cheat uix.al.thai.TextButton
-G2L["21"] = Instance.new("TextButton", G2L["1e"]);
+-- StarterGui.modmenu.menu.fi.fa.btn
+G2L["20"] = Instance.new("Frame", G2L["16"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Size"] = UDim2.new(1.00132, 0, 0.15499, 0);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Name"] = [[btn]];
+G2L["20"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton
+G2L["21"] = Instance.new("TextButton", G2L["20"]);
 G2L["21"]["TextWrapped"] = true;
 G2L["21"]["BorderSizePixel"] = 0;
 G2L["21"]["TextSize"] = 14;
@@ -256,1061 +235,2284 @@ G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["21"]["TextScaled"] = true;
 G2L["21"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["21"]["ZIndex"] = 12;
 G2L["21"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["21"]["BackgroundTransparency"] = 1;
 G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["21"]["Text"] = [[ไทย]];
+G2L["21"]["Text"] = [[WORLD]];
+G2L["21"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
 
 
--- StarterGui.cheat uix.al.thai.TextButton.MakePlayerJumpOnClick
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
 G2L["22"] = Instance.new("LocalScript", G2L["21"]);
-G2L["22"]["Enabled"] = false;
-G2L["22"]["Name"] = [[MakePlayerJumpOnClick]];
-G2L["22"]["Disabled"] = true;
+G2L["22"]["Name"] = [[chngetan]];
 
 
--- StarterGui.cheat uix.al.thai.TextButton.MovePlayerOnClick
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
 G2L["23"] = Instance.new("LocalScript", G2L["21"]);
-G2L["23"]["Name"] = [[MovePlayerOnClick]];
+G2L["23"]["Name"] = [[aim]];
 
 
--- StarterGui.cheat uix.al.eng
-G2L["24"] = Instance.new("Frame", G2L["2"]);
-G2L["24"]["ZIndex"] = 11;
-G2L["24"]["BorderSizePixel"] = 0;
-G2L["24"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["Size"] = UDim2.new(0.14207, 0, 0.06968, 0);
-G2L["24"]["Position"] = UDim2.new(0.70154, 0, 0.13327, 0);
-G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["24"]["Name"] = [[eng]];
-G2L["24"]["BackgroundTransparency"] = 0.5;
+-- StarterGui.modmenu.menu.fi.fa.btn.UIStroke
+G2L["24"] = Instance.new("UIStroke", G2L["20"]);
+G2L["24"]["Transparency"] = 0.9;
+G2L["24"]["Thickness"] = 1.05;
+G2L["24"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.cheat uix.al.eng.UICorner
-G2L["25"] = Instance.new("UICorner", G2L["24"]);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient
+G2L["25"] = Instance.new("UIGradient", G2L["20"]);
+G2L["25"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+G2L["26"] = Instance.new("LocalScript", G2L["25"]);
 
 
 
--- StarterGui.cheat uix.al.eng.UIStroke
-G2L["26"] = Instance.new("UIStroke", G2L["24"]);
-G2L["26"]["Color"] = Color3.fromRGB(0, 255, 255);
-
-
--- StarterGui.cheat uix.al.eng.TextButton
-G2L["27"] = Instance.new("TextButton", G2L["24"]);
-G2L["27"]["TextWrapped"] = true;
+-- StarterGui.modmenu.menu.fi.fa.btn
+G2L["27"] = Instance.new("Frame", G2L["16"]);
 G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["TextSize"] = 14;
-G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["TextScaled"] = true;
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27"]["ZIndex"] = 12;
-G2L["27"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["27"]["BackgroundTransparency"] = 1;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Size"] = UDim2.new(1.00132, 0, 0.15499, 0);
 G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Text"] = [[ENG]];
+G2L["27"]["Name"] = [[btn]];
+G2L["27"]["BackgroundTransparency"] = 0.55;
 
 
--- StarterGui.cheat uix.al.eng.TextButton.MakePlayerJumpOnClick
-G2L["28"] = Instance.new("LocalScript", G2L["27"]);
-G2L["28"]["Enabled"] = false;
-G2L["28"]["Name"] = [[MakePlayerJumpOnClick]];
-G2L["28"]["Disabled"] = true;
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton
+G2L["28"] = Instance.new("TextButton", G2L["27"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["28"]["BackgroundTransparency"] = 1;
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[TAB3]];
+G2L["28"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
 
 
--- StarterGui.cheat uix.al.eng.TextButton.th
-G2L["29"] = Instance.new("LocalScript", G2L["27"]);
-G2L["29"]["Name"] = [[th]];
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+G2L["29"] = Instance.new("LocalScript", G2L["28"]);
+G2L["29"]["Name"] = [[chngetan]];
 
 
--- StarterGui.cheat uix.al.TextLabel
-G2L["2a"] = Instance.new("TextLabel", G2L["2"]);
-G2L["2a"]["TextWrapped"] = true;
-G2L["2a"]["ZIndex"] = 12;
-G2L["2a"]["BorderSizePixel"] = 0;
-G2L["2a"]["TextScaled"] = true;
-G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a"]["TextSize"] = 14;
-G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2a"]["TextColor3"] = Color3.fromRGB(81, 253, 255);
-G2L["2a"]["BackgroundTransparency"] = 1;
-G2L["2a"]["Size"] = UDim2.new(0.67056, 0, 0.30788, 0);
-G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2a"]["Text"] = [[Loading..]];
-G2L["2a"]["Position"] = UDim2.new(0.1613, 0, 0.26767, 0);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+G2L["2a"] = Instance.new("LocalScript", G2L["28"]);
+G2L["2a"]["Name"] = [[aim]];
 
 
--- StarterGui.cheat uix.al.TextLabel.LocalScript
-G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIStroke
+G2L["2b"] = Instance.new("UIStroke", G2L["27"]);
+G2L["2b"]["Transparency"] = 0.9;
+G2L["2b"]["Thickness"] = 1.05;
+G2L["2b"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
-
--- StarterGui.cheat uix.al.item
-G2L["2c"] = Instance.new("Frame", G2L["2"]);
-G2L["2c"]["BorderSizePixel"] = 0;
-G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c"]["Size"] = UDim2.new(0.19904, 0, 0.84196, 0);
-G2L["2c"]["Position"] = UDim2.new(1.0356, 0, 0.15804, 0);
-G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c"]["Name"] = [[item]];
-G2L["2c"]["BackgroundTransparency"] = 0.5;
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient
+G2L["2c"] = Instance.new("UIGradient", G2L["27"]);
+G2L["2c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
 
 
--- StarterGui.cheat uix.al.item.UIStroke
-G2L["2d"] = Instance.new("UIStroke", G2L["2c"]);
-G2L["2d"]["Color"] = Color3.fromRGB(0, 255, 255);
-
-
--- StarterGui.cheat uix.al.item.UICorner
-G2L["2e"] = Instance.new("UICorner", G2L["2c"]);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
 
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame
-G2L["2f"] = Instance.new("ScrollingFrame", G2L["2c"]);
-G2L["2f"]["Active"] = true;
-G2L["2f"]["BorderSizePixel"] = 0;
-G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["2f"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["ScrollBarThickness"] = 0;
-G2L["2f"]["BackgroundTransparency"] = 1;
+-- StarterGui.modmenu.menu.fi.fa.click
+G2L["2e"] = Instance.new("Sound", G2L["16"]);
+G2L["2e"]["Volume"] = 2.125;
+G2L["2e"]["Name"] = [[click]];
+G2L["2e"]["SoundId"] = [[rbxassetid://17208353912]];
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab
-G2L["30"] = Instance.new("Frame", G2L["2f"]);
-G2L["30"]["BorderSizePixel"] = 0;
-G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["30"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["Name"] = [[tab]];
-G2L["30"]["BackgroundTransparency"] = 1;
+-- StarterGui.modmenu.menu.fi.fa.click2
+G2L["2f"] = Instance.new("Sound", G2L["16"]);
+G2L["2f"]["Volume"] = 2.125;
+G2L["2f"]["Name"] = [[click2]];
+G2L["2f"]["SoundId"] = [[rbxassetid://17208209318]];
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp
-G2L["31"] = Instance.new("Frame", G2L["30"]);
-G2L["31"]["ZIndex"] = 13;
+-- StarterGui.modmenu.menu.fi.fa.click3
+G2L["30"] = Instance.new("Sound", G2L["16"]);
+G2L["30"]["Volume"] = 2.125;
+G2L["30"]["Name"] = [[click3]];
+G2L["30"]["SoundId"] = [[rbxassetid://17208295577]];
+
+
+-- StarterGui.modmenu.menu.fi.tab
+G2L["31"] = Instance.new("Frame", G2L["11"]);
+G2L["31"]["ZIndex"] = 2;
 G2L["31"]["BorderSizePixel"] = 0;
 G2L["31"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Size"] = UDim2.new(1, 0, 0.06664, 0);
-G2L["31"]["Position"] = UDim2.new(0, 0, 0, 0);
+G2L["31"]["Size"] = UDim2.new(0.54945, 0, 1.00268, 0);
+G2L["31"]["Position"] = UDim2.new(0.45055, 0, -0.00268, 0);
 G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Name"] = [[hp]];
-G2L["31"]["BackgroundTransparency"] = 0.6;
+G2L["31"]["Name"] = [[tab]];
+G2L["31"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp.UICorner
+-- StarterGui.modmenu.menu.fi.tab.UICorner
 G2L["32"] = Instance.new("UICorner", G2L["31"]);
+G2L["32"]["CornerRadius"] = UDim.new(0, 0);
 
 
+-- StarterGui.modmenu.menu.fi.tab.showtab
+G2L["33"] = Instance.new("Frame", G2L["31"]);
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Name"] = [[showtab]];
+G2L["33"]["BackgroundTransparency"] = 1;
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp.UIStroke
-G2L["33"] = Instance.new("UIStroke", G2L["31"]);
-G2L["33"]["Color"] = Color3.fromRGB(0, 255, 255);
 
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp.TextButton
-G2L["34"] = Instance.new("TextButton", G2L["31"]);
-G2L["34"]["TextWrapped"] = true;
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1
+G2L["34"] = Instance.new("Frame", G2L["33"]);
 G2L["34"]["BorderSizePixel"] = 0;
-G2L["34"]["TextSize"] = 14;
-G2L["34"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
-G2L["34"]["TextScaled"] = true;
 G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["34"]["ZIndex"] = 14;
 G2L["34"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["34"]["BackgroundTransparency"] = 1;
 G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["34"]["Text"] = [[Loading.]];
+G2L["34"]["Name"] = [[tab1]];
+G2L["34"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp.TextButton.LocalScript
-G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.TextLabel
+G2L["35"] = Instance.new("TextLabel", G2L["34"]);
+G2L["35"]["TextWrapped"] = true;
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["TextScaled"] = true;
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["35"]["TextSize"] = 14;
+G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["35"]["BackgroundTransparency"] = 1;
+G2L["35"]["Size"] = UDim2.new(1, 0, 0.06471, 0);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Text"] = [[- PLAYER -]];
 
 
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame
+G2L["36"] = Instance.new("ScrollingFrame", G2L["34"]);
+G2L["36"]["Active"] = true;
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["Size"] = UDim2.new(1, 0, 0.93529, 0);
+G2L["36"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 222, 255);
+G2L["36"]["Position"] = UDim2.new(0, 0, 0.06471, 0);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["ScrollBarThickness"] = 2;
+G2L["36"]["BackgroundTransparency"] = 1;
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.UIListLayout
-G2L["36"] = Instance.new("UIListLayout", G2L["30"]);
-G2L["36"]["Padding"] = UDim.new(0, 10);
-G2L["36"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm
-G2L["37"] = Instance.new("Frame", G2L["30"]);
-G2L["37"]["ZIndex"] = 13;
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory
+G2L["37"] = Instance.new("Frame", G2L["36"]);
 G2L["37"]["BorderSizePixel"] = 0;
-G2L["37"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37"]["Size"] = UDim2.new(1, 0, 0.06664, 0);
-G2L["37"]["Position"] = UDim2.new(0, 0, 0, 0);
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37"]["Name"] = [[bbm]];
-G2L["37"]["BackgroundTransparency"] = 0.6;
+G2L["37"]["Name"] = [[memory]];
+G2L["37"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm.UICorner
-G2L["38"] = Instance.new("UICorner", G2L["37"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn
+G2L["38"] = Instance.new("Frame", G2L["37"]);
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["38"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Name"] = [[btn]];
+G2L["38"]["BackgroundTransparency"] = 0.55;
 
 
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm.UIStroke
-G2L["39"] = Instance.new("UIStroke", G2L["37"]);
-G2L["39"]["Color"] = Color3.fromRGB(0, 255, 255);
-
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm.TextButton
-G2L["3a"] = Instance.new("TextButton", G2L["37"]);
-G2L["3a"]["TextWrapped"] = true;
-G2L["3a"]["BorderSizePixel"] = 0;
-G2L["3a"]["TextSize"] = 14;
-G2L["3a"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
-G2L["3a"]["TextScaled"] = true;
-G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3a"]["ZIndex"] = 14;
-G2L["3a"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["3a"]["BackgroundTransparency"] = 1;
-G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3a"]["Text"] = [[Loading.]];
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton
+G2L["39"] = Instance.new("TextButton", G2L["38"]);
+G2L["39"]["TextWrapped"] = true;
+G2L["39"]["BorderSizePixel"] = 0;
+G2L["39"]["TextSize"] = 14;
+G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["TextScaled"] = true;
+G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["39"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["39"]["BackgroundTransparency"] = 1;
+G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["39"]["Text"] = [[FLY JUMP : OFF]];
+G2L["39"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm.TextButton.LocalScript
-G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.FlyJumpToggle
+G2L["3a"] = Instance.new("LocalScript", G2L["39"]);
+G2L["3a"]["Name"] = [[FlyJumpToggle]];
 
 
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.fakesword
-G2L["3c"] = Instance.new("Frame", G2L["30"]);
-G2L["3c"]["ZIndex"] = 13;
-G2L["3c"]["BorderSizePixel"] = 0;
-G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["Size"] = UDim2.new(1, 0, 0.06664, 0);
-G2L["3c"]["Position"] = UDim2.new(0, 0, 0, 0);
-G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["Name"] = [[fakesword]];
-G2L["3c"]["BackgroundTransparency"] = 0.6;
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+G2L["3b"] = Instance.new("LocalScript", G2L["39"]);
+G2L["3b"]["Name"] = [[text]];
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.fakesword.UICorner
-G2L["3d"] = Instance.new("UICorner", G2L["3c"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+G2L["3c"] = Instance.new("LocalScript", G2L["39"]);
+G2L["3c"]["Name"] = [[sound]];
 
 
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.fakesword.UIStroke
-G2L["3e"] = Instance.new("UIStroke", G2L["3c"]);
-G2L["3e"]["Color"] = Color3.fromRGB(0, 255, 255);
-
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.fakesword.TextButton
-G2L["3f"] = Instance.new("TextButton", G2L["3c"]);
-G2L["3f"]["TextWrapped"] = true;
-G2L["3f"]["BorderSizePixel"] = 0;
-G2L["3f"]["TextSize"] = 14;
-G2L["3f"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
-G2L["3f"]["TextScaled"] = true;
-G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3f"]["ZIndex"] = 14;
-G2L["3f"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["3f"]["BackgroundTransparency"] = 1;
-G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3f"]["Text"] = [[Loading.]];
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIStroke
+G2L["3d"] = Instance.new("UIStroke", G2L["38"]);
+G2L["3d"]["Transparency"] = 0.9;
+G2L["3d"]["Thickness"] = 1.05;
+G2L["3d"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.fakesword.TextButton.LocalScript
-G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient
+G2L["3e"] = Instance.new("UIGradient", G2L["38"]);
+G2L["3e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["3f"] = Instance.new("LocalScript", G2L["3e"]);
 
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.thd
-G2L["41"] = Instance.new("Frame", G2L["30"]);
-G2L["41"]["ZIndex"] = 13;
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.UIListLayout
+G2L["40"] = Instance.new("UIListLayout", G2L["37"]);
+G2L["40"]["Padding"] = UDim.new(0, 8);
+G2L["40"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn
+G2L["41"] = Instance.new("Frame", G2L["37"]);
 G2L["41"]["BorderSizePixel"] = 0;
 G2L["41"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["41"]["Size"] = UDim2.new(1, 0, 0.06664, 0);
-G2L["41"]["Position"] = UDim2.new(0, 0, 0, 0);
+G2L["41"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["41"]["Position"] = UDim2.new(-0, 0, 0, 0);
 G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["41"]["Name"] = [[thd]];
-G2L["41"]["BackgroundTransparency"] = 0.6;
+G2L["41"]["Name"] = [[btn]];
+G2L["41"]["BackgroundTransparency"] = 0.55;
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.thd.UICorner
-G2L["42"] = Instance.new("UICorner", G2L["41"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton
+G2L["42"] = Instance.new("TextButton", G2L["41"]);
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["TextSize"] = 14;
+G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["TextScaled"] = true;
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["42"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["42"]["BackgroundTransparency"] = 1;
+G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["Text"] = [[WALKSPEED : OFF]];
+G2L["42"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+G2L["43"] = Instance.new("LocalScript", G2L["42"]);
+G2L["43"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.SetPlayerSpeedOnClick
+G2L["44"] = Instance.new("LocalScript", G2L["42"]);
+G2L["44"]["Name"] = [[SetPlayerSpeedOnClick]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+G2L["45"] = Instance.new("LocalScript", G2L["42"]);
+G2L["45"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIStroke
+G2L["46"] = Instance.new("UIStroke", G2L["41"]);
+G2L["46"]["Transparency"] = 0.9;
+G2L["46"]["Thickness"] = 1.05;
+G2L["46"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient
+G2L["47"] = Instance.new("UIGradient", G2L["41"]);
+G2L["47"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["48"] = Instance.new("LocalScript", G2L["47"]);
 
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.thd.UIStroke
-G2L["43"] = Instance.new("UIStroke", G2L["41"]);
-G2L["43"]["Color"] = Color3.fromRGB(0, 255, 255);
-
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.thd.TextButton
-G2L["44"] = Instance.new("TextButton", G2L["41"]);
-G2L["44"]["TextWrapped"] = true;
-G2L["44"]["BorderSizePixel"] = 0;
-G2L["44"]["TextSize"] = 14;
-G2L["44"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
-G2L["44"]["TextScaled"] = true;
-G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["44"]["ZIndex"] = 14;
-G2L["44"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["44"]["BackgroundTransparency"] = 1;
-G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["Text"] = [[Loading.]];
-
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.thd.TextButton.LocalScript
-G2L["45"] = Instance.new("LocalScript", G2L["44"]);
-
-
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.pizz
-G2L["46"] = Instance.new("Frame", G2L["30"]);
-G2L["46"]["ZIndex"] = 13;
-G2L["46"]["BorderSizePixel"] = 0;
-G2L["46"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["46"]["Size"] = UDim2.new(1, 0, 0.06664, 0);
-G2L["46"]["Position"] = UDim2.new(0, 0, 0, 0);
-G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["46"]["Name"] = [[pizz]];
-G2L["46"]["BackgroundTransparency"] = 0.6;
-
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.pizz.UICorner
-G2L["47"] = Instance.new("UICorner", G2L["46"]);
-
-
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.pizz.UIStroke
-G2L["48"] = Instance.new("UIStroke", G2L["46"]);
-G2L["48"]["Color"] = Color3.fromRGB(0, 255, 255);
-
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.pizz.TextButton
-G2L["49"] = Instance.new("TextButton", G2L["46"]);
-G2L["49"]["TextWrapped"] = true;
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn
+G2L["49"] = Instance.new("Frame", G2L["37"]);
 G2L["49"]["BorderSizePixel"] = 0;
-G2L["49"]["TextSize"] = 14;
-G2L["49"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
-G2L["49"]["TextScaled"] = true;
-G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["49"]["ZIndex"] = 14;
-G2L["49"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["49"]["BackgroundTransparency"] = 1;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["49"]["Position"] = UDim2.new(-0, 0, 0, 0);
 G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["49"]["Text"] = [[Loading.]];
+G2L["49"]["Name"] = [[btn]];
+G2L["49"]["BackgroundTransparency"] = 0.55;
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.pizz.TextButton.LocalScript
-G2L["4a"] = Instance.new("LocalScript", G2L["49"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton
+G2L["4a"] = Instance.new("TextButton", G2L["49"]);
+G2L["4a"]["TextWrapped"] = true;
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["TextSize"] = 14;
+G2L["4a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["TextScaled"] = true;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["4a"]["BackgroundTransparency"] = 1;
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Text"] = [[NOCLIP : OFF]];
+G2L["4a"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
 
 
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver
-G2L["4b"] = Instance.new("Frame", G2L["30"]);
-G2L["4b"]["ZIndex"] = 13;
-G2L["4b"]["BorderSizePixel"] = 0;
-G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4b"]["Size"] = UDim2.new(1, 0, 0.06664, 0);
-G2L["4b"]["Position"] = UDim2.new(0, 0, 0, 0);
-G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4b"]["Name"] = [[giver]];
-G2L["4b"]["BackgroundTransparency"] = 0.6;
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+G2L["4b"] = Instance.new("LocalScript", G2L["4a"]);
+G2L["4b"]["Name"] = [[text]];
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver.UICorner
-G2L["4c"] = Instance.new("UICorner", G2L["4b"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+G2L["4c"] = Instance.new("LocalScript", G2L["4a"]);
+G2L["4c"]["Name"] = [[sound]];
 
 
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver.UIStroke
-G2L["4d"] = Instance.new("UIStroke", G2L["4b"]);
-G2L["4d"]["Color"] = Color3.fromRGB(0, 255, 255);
-
-
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver.TextButton
-G2L["4e"] = Instance.new("TextButton", G2L["4b"]);
-G2L["4e"]["TextWrapped"] = true;
-G2L["4e"]["BorderSizePixel"] = 0;
-G2L["4e"]["TextSize"] = 14;
-G2L["4e"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
-G2L["4e"]["TextScaled"] = true;
-G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4e"]["ZIndex"] = 14;
-G2L["4e"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["4e"]["BackgroundTransparency"] = 1;
-G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["Text"] = [[Loading.]];
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIStroke
+G2L["4d"] = Instance.new("UIStroke", G2L["49"]);
+G2L["4d"]["Transparency"] = 0.9;
+G2L["4d"]["Thickness"] = 1.05;
+G2L["4d"]["Color"] = Color3.fromRGB(255, 255, 255);
 
 
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver.TextButton.LocalScript
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient
+G2L["4e"] = Instance.new("UIGradient", G2L["49"]);
+G2L["4e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
 G2L["4f"] = Instance.new("LocalScript", G2L["4e"]);
 
 
 
--- StarterGui.cheat uix.al.item.TextLabel
-G2L["50"] = Instance.new("TextLabel", G2L["2c"]);
-G2L["50"]["TextWrapped"] = true;
-G2L["50"]["TextStrokeTransparency"] = 0;
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2
+G2L["50"] = Instance.new("Frame", G2L["33"]);
+G2L["50"]["Visible"] = false;
 G2L["50"]["BorderSizePixel"] = 0;
-G2L["50"]["TextStrokeColor3"] = Color3.fromRGB(119, 119, 119);
-G2L["50"]["TextScaled"] = true;
 G2L["50"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["50"]["TextSize"] = 14;
-G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["50"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["50"]["BackgroundTransparency"] = 1;
-G2L["50"]["Size"] = UDim2.new(1.08241, 0, 0.10548, 0);
+G2L["50"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["50"]["Text"] = [[ITEM GIVER]];
-G2L["50"]["Position"] = UDim2.new(-0.04807, 0, -0.10775, 0);
+G2L["50"]["Name"] = [[tab2]];
+G2L["50"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.cheat uix.al.item.TextLabel.LocalScript
-G2L["51"] = Instance.new("LocalScript", G2L["50"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.TextLabel
+G2L["51"] = Instance.new("TextLabel", G2L["50"]);
+G2L["51"]["TextWrapped"] = true;
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["TextScaled"] = true;
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["TextSize"] = 14;
+G2L["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["51"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["BackgroundTransparency"] = 1;
+G2L["51"]["Size"] = UDim2.new(1, 0, 0.06471, 0);
+G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Text"] = [[- WORLD -]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame
+G2L["52"] = Instance.new("ScrollingFrame", G2L["50"]);
+G2L["52"]["Active"] = true;
+G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["52"]["Size"] = UDim2.new(1, 0, 0.93529, 0);
+G2L["52"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 222, 255);
+G2L["52"]["Position"] = UDim2.new(0, 0, 0.06471, 0);
+G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["ScrollBarThickness"] = 2;
+G2L["52"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory
+G2L["53"] = Instance.new("Frame", G2L["52"]);
+G2L["53"]["BorderSizePixel"] = 0;
+G2L["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["53"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["53"]["Name"] = [[memory]];
+G2L["53"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.UIListLayout
+G2L["54"] = Instance.new("UIListLayout", G2L["53"]);
+G2L["54"]["Padding"] = UDim.new(0, 8);
+G2L["54"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn
+G2L["55"] = Instance.new("Frame", G2L["53"]);
+G2L["55"]["BorderSizePixel"] = 0;
+G2L["55"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["55"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["55"]["Name"] = [[btn]];
+G2L["55"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton
+G2L["56"] = Instance.new("TextButton", G2L["55"]);
+G2L["56"]["TextWrapped"] = true;
+G2L["56"]["BorderSizePixel"] = 0;
+G2L["56"]["TextSize"] = 14;
+G2L["56"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["56"]["TextScaled"] = true;
+G2L["56"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["56"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["56"]["BackgroundTransparency"] = 1;
+G2L["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["56"]["Text"] = [[ESP ALL PLAYER : OFF]];
+G2L["56"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+G2L["57"] = Instance.new("LocalScript", G2L["56"]);
+G2L["57"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+G2L["58"] = Instance.new("LocalScript", G2L["56"]);
+G2L["58"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleESP
+G2L["59"] = Instance.new("LocalScript", G2L["56"]);
+G2L["59"]["Name"] = [[ToggleESP]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIStroke
+G2L["5a"] = Instance.new("UIStroke", G2L["55"]);
+G2L["5a"]["Transparency"] = 0.9;
+G2L["5a"]["Thickness"] = 1.05;
+G2L["5a"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient
+G2L["5b"] = Instance.new("UIGradient", G2L["55"]);
+G2L["5b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["5c"] = Instance.new("LocalScript", G2L["5b"]);
 
 
 
--- StarterGui.cheat uix.al.item.TextLabel.UIGradient
-G2L["52"] = Instance.new("UIGradient", G2L["50"]);
-G2L["52"]["Offset"] = Vector2.new(0, 2);
-G2L["52"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(50, 255, 255)),ColorSequenceKeypoint.new(0.334, Color3.fromRGB(42, 148, 255)),ColorSequenceKeypoint.new(0.478, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.626, Color3.fromRGB(38, 96, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(31, 0, 255))};
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn
+G2L["5d"] = Instance.new("Frame", G2L["53"]);
+G2L["5d"]["BorderSizePixel"] = 0;
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["5d"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Name"] = [[btn]];
+G2L["5d"]["BackgroundTransparency"] = 0.55;
 
 
--- StarterGui.cheat uix.al.item.TextLabel.UIGradient.LocalScript
-G2L["53"] = Instance.new("LocalScript", G2L["52"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton
+G2L["5e"] = Instance.new("TextButton", G2L["5d"]);
+G2L["5e"]["TextWrapped"] = true;
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["TextSize"] = 14;
+G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["TextScaled"] = true;
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5e"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["5e"]["BackgroundTransparency"] = 1;
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Text"] = [[TIME SET : DAY]];
+G2L["5e"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+G2L["5f"] = Instance.new("LocalScript", G2L["5e"]);
+G2L["5f"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+G2L["60"] = Instance.new("LocalScript", G2L["5e"]);
+G2L["60"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleDayNight
+G2L["61"] = Instance.new("LocalScript", G2L["5e"]);
+G2L["61"]["Name"] = [[ToggleDayNight]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIStroke
+G2L["62"] = Instance.new("UIStroke", G2L["5d"]);
+G2L["62"]["Transparency"] = 0.9;
+G2L["62"]["Thickness"] = 1.05;
+G2L["62"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient
+G2L["63"] = Instance.new("UIGradient", G2L["5d"]);
+G2L["63"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["64"] = Instance.new("LocalScript", G2L["63"]);
 
 
 
--- StarterGui.cheat uix.al.TextLabel
-G2L["54"] = Instance.new("TextLabel", G2L["2"]);
-G2L["54"]["TextWrapped"] = true;
-G2L["54"]["ZIndex"] = 12;
-G2L["54"]["BorderSizePixel"] = 0;
-G2L["54"]["TextScaled"] = true;
-G2L["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["54"]["TextSize"] = 14;
-G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["54"]["TextColor3"] = Color3.fromRGB(81, 253, 255);
-G2L["54"]["BackgroundTransparency"] = 1;
-G2L["54"]["Size"] = UDim2.new(0.18803, 0, 0.0861, 0);
-G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["54"]["Text"] = [[0.0.0.0.0.0]];
-G2L["54"]["Position"] = UDim2.new(-0.18864, 0, 0.9139, 0);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn
+G2L["65"] = Instance.new("Frame", G2L["53"]);
+G2L["65"]["BorderSizePixel"] = 0;
+G2L["65"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["65"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["65"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["65"]["Name"] = [[btn]];
+G2L["65"]["BackgroundTransparency"] = 0.55;
 
 
--- StarterGui.cheat uix.al.TextLabel.LocalScript
-G2L["55"] = Instance.new("LocalScript", G2L["54"]);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton
+G2L["66"] = Instance.new("TextButton", G2L["65"]);
+G2L["66"]["TextWrapped"] = true;
+G2L["66"]["BorderSizePixel"] = 0;
+G2L["66"]["TextSize"] = 14;
+G2L["66"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["TextScaled"] = true;
+G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["66"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["66"]["BackgroundTransparency"] = 1;
+G2L["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["Text"] = [[SOME TEXTURE : OFF]];
+G2L["66"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+G2L["67"] = Instance.new("LocalScript", G2L["66"]);
+G2L["67"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+G2L["68"] = Instance.new("LocalScript", G2L["66"]);
+G2L["68"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleTextureScript
+G2L["69"] = Instance.new("LocalScript", G2L["66"]);
+G2L["69"]["Enabled"] = false;
+G2L["69"]["Name"] = [[ToggleTextureScript]];
+G2L["69"]["Disabled"] = true;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleTextureScript
+G2L["6a"] = Instance.new("LocalScript", G2L["66"]);
+G2L["6a"]["Name"] = [[ToggleTextureScript]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIStroke
+G2L["6b"] = Instance.new("UIStroke", G2L["65"]);
+G2L["6b"]["Transparency"] = 0.9;
+G2L["6b"]["Thickness"] = 1.05;
+G2L["6b"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient
+G2L["6c"] = Instance.new("UIGradient", G2L["65"]);
+G2L["6c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["6d"] = Instance.new("LocalScript", G2L["6c"]);
 
 
 
--- StarterGui.cheat uix.PrintNumbers
-G2L["56"] = Instance.new("LocalScript", G2L["1"]);
-G2L["56"]["Enabled"] = false;
-G2L["56"]["Name"] = [[PrintNumbers]];
-G2L["56"]["Disabled"] = true;
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.TextLabel
+G2L["6e"] = Instance.new("TextLabel", G2L["53"]);
+G2L["6e"]["TextWrapped"] = true;
+G2L["6e"]["BorderSizePixel"] = 0;
+G2L["6e"]["TextScaled"] = true;
+G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["TextSize"] = 14;
+G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6e"]["TextColor3"] = Color3.fromRGB(0, 252, 255);
+G2L["6e"]["BackgroundTransparency"] = 1;
+G2L["6e"]["Size"] = UDim2.new(1, 0, 0.04543, 0);
+G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6e"]["Text"] = [[- WIRE FRAME  -]];
+G2L["6e"]["Position"] = UDim2.new(0, 0, 0.43291, 0);
 
 
--- StarterGui.cheat uix.al.UIStroke.UIGradient.LocalScript
-local function C_6()
-local script = G2L["6"];
-	while true do wait()
-		script.Parent.Rotation += 4
-	end
-end;
-task.spawn(C_6);
--- StarterGui.cheat uix.al.tgt.UIStroke.UIGradient.LocalScript
-local function C_b()
-local script = G2L["b"];
-	while true do wait()
-		script.Parent.Rotation += 4
-	end
-end;
-task.spawn(C_b);
--- StarterGui.cheat uix.al.tgt.TextButton.LocalScript
-local function C_f()
-local script = G2L["f"];
-	local ddf = script.Parent
-	local asd = script.Parent.Parent.Parent.Parent.al
-	local btn = script.Parent.Parent.Parent.tgt
-	local tot = true
-	local bv = true
-	
-	
-	
-	ddf.MouseButton1Click:Connect(function()
-		if tot == true then
-			
-			
-			if bv == true then
-				bv = false
-				asd:TweenPosition(UDim2.new(0.176, 0,-0.95, 0), "In", "Sine", 0.5, true)
-				for i = 1, 18 do
-					wait()
-					btn.Rotation = btn.Rotation + 10
-				end
-				--wait(1.2)
-				
-				tot = false
-				bv = true
-			end
-			
-			
-		else
-			if bv == true then
-				bv = false
-				asd:TweenPosition(UDim2.new(0.176, 0,-0.095, 0), "In", "Sine", 0.5, true)
-				for i = 1, 18 do
-					wait()
-					btn.Rotation = btn.Rotation + 10
-				end
-				--wait(1.2)
-	
-	
-				bv = true
-				tot = true
-			end
-			
-			
-		end
-	end)
-	
-	
-	
-	
-end;
-task.spawn(C_f);
--- StarterGui.cheat uix.al.tgt.TextButton.UIStroke.UIGradient.LocalScript
-local function C_12()
-local script = G2L["12"];
-	while true do wait()
-		script.Parent.Rotation += 4
-	end
-end;
-task.spawn(C_12);
--- StarterGui.cheat uix.al.auto.TextButton.MovePlayerOnClick
-local function C_18()
-local script = G2L["18"];
-	local UserInputService = game:GetService("UserInputService")
-	local Players = game:GetService("Players")
-	
-	local button = script.Parent
-	local player = Players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoid = character:WaitForChild("Humanoid")
-	
-	local loopjmp = false
-	
-	
-	
-	
-	local chotxt = script.Parent.Frame.TextBox
-	
-	local waypoints1 = {
-		CFrame.new(-820.6841430664062, 66.43312072753906, 784.951171875),
-		CFrame.new(-1005.2112426757812, 458.7128601074219, 1090.3883056640625),
-		CFrame.new(-1005.2112426757812, 458.7128601074219, 1090.3883056640625),
-		CFrame.new(-993.6875, 479.0898742675781, 1114.522705078125),
-		CFrame.new(-1095.9033203125, 752.9931640625, 1232.664794921875),
-		CFrame.new(-1161.2740478515625, 1048.1522216796875, 1372.4307861328125),
-		CFrame.new(-1170.826416015625, 1071.1282958984375, 1375.6422119140625),
-		CFrame.new(-1144.973388671875, 1077.724853515625, 1384.57177734375),
-		CFrame.new(-1121.8414306640625, 1096.1314697265625, 1383.072509765625),
-		CFrame.new(-1099.429443359375, 1114.24853515625, 1391.016845703125),
-		CFrame.new(-1105.5133056640625, 1117.0064697265625, 1426.8963623046875),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new(),
-		CFrame.new()
-	
-		
-	}
-	
-	local function moveToNextWaypoint(index)
-	    if index > #waypoints1 then
-	        print("END. WALK.")
-	        return
-	    end
-	
-	    humanoid:MoveTo(waypoints1[index].Position)
-	    humanoid.MoveToFinished:Wait()
-	
-	    if index == 1 then
-	        moveToNextWaypoint(index + 1)
-	        
-	    end
-	
-		if index == 2 then
-			moveToNextWaypoint(index + 1)
-	    end
-	
-		if index == 3 then
-			moveToNextWaypoint(index + 1)
-		end
-		if index == 4 then
-			moveToNextWaypoint(index + 1)
-	    end
-		if index == 5 then
-			moveToNextWaypoint(index + 1)
-	    end	
-		if index == 6 then
-			
-	    end	
-		if index == 7 then
-			
-	    end	
-		if index == 8 then
-			
-		end	
-		if index == 9 then
-			
-	    end	
-		if index == 10 then
-			
-	    end	
-	end
-	
-	button.MouseButton1Click:Connect(function()
-	    if chotxt.Text == "1" then
-	        moveToNextWaypoint(1)
-	    end
-	end)
-	
-	button.MouseButton1Click:Connect(function()
-		if chotxt.Text == "2" then
-			moveToNextWaypoint(1)
-		end
-	end)
-	
-	
-	button.MouseButton1Click:Connect(function()
-		if chotxt.Text == "3" then
-			moveToNextWaypoint(1)
-		end
-	end)
-	
-	
-	button.MouseButton1Click:Connect(function()
-		if chotxt.Text == "4" then
-			moveToNextWaypoint(1)
-		end
-	end)
-	
-	
-	button.MouseButton1Click:Connect(function()
-		if chotxt.Text == "5" then
-			moveToNextWaypoint(1)
-		end
-	end)
-	
-	button.MouseButton1Click:Connect(function()
-		if chotxt.Text == "6" then
-			moveToNextWaypoint(1)
-		end
-	end)
-	
-	button.MouseButton1Click:Connect(function()
-		if chotxt.Text == "7" then
-			moveToNextWaypoint(1)
-		end
-	end)
-	
-	button.MouseButton1Click:Connect(function()
-		if chotxt.Text == "8" then
-			moveToNextWaypoint(1)
-		end
-	end)
-	
-	button.MouseButton1Click:Connect(function()
-		if chotxt.Text == "9" then
-			moveToNextWaypoint(1)
-		end
-	end)
-	
-	button.MouseButton1Click:Connect(function()
-		if chotxt.Text == "10" then
-			moveToNextWaypoint(1)
-		end
-	end)
-	
-	--jump script
-	local player = game.Players.LocalPlayer
-	--jmp function use jmp() to fire function
-	function jmp()
-	    local character = player.Character or player.CharacterAdded:Wait()
-	    local humanoid = character:FindFirstChildOfClass("Humanoid")
-	    if humanoid then
-	        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	    end
-	end
-	
-	function unloop()
-	end
-	
-	while true do
-	    wait()
-	    while loopjmp do
-	        wait(0.65)--jump delay normal to 0.65 fast if want slow change it to 1
-	        jmp()
-	    end
-	end
-	
-	function tp()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.Cframe = CFrame.new(-738.9210815429688, 135.5248565673828, 747.814208984375)
-	end
-	
-	
-end;
-task.spawn(C_18);
--- StarterGui.cheat uix.al.thai.TextButton.MovePlayerOnClick
-local function C_23()
-local script = G2L["23"];
-	local th = script.Parent.Parent.Parent.Parent.al.auto.TextButton
-	local thc = script.Parent.Parent.Parent.Parent.al.auto.TextButton.Frame.TextBox
-	local thv = script.Parent.Parent.Parent.TextLabel
-	local touch = script.Parent
-	
-	touch.MouseButton1Click:Connect(function()
-		th.Text = "ออโต้ต้นถั่ว(กดตรงนี้เพิ่อออโต้หรือผ่านอัตโนมัติ)"
-		thc.PlaceholderText = "ต้องการผ่านชั้นไหน 1-10 เอาเลขชั้นมาใส่ในนี้"
-		thv.Text = "อันดับแรกให้ไปที่ต้นถั่วก่อนค่อยออโต้(ถ้าเปิดในล็อบบี้จะบัค)"
-	end)
-	
-	
-end;
-task.spawn(C_23);
--- StarterGui.cheat uix.al.eng.TextButton.th
-local function C_29()
-local script = G2L["29"];
-	local eng = script.Parent.Parent.Parent.Parent.al.auto.TextButton
-	local engc = script.Parent.Parent.Parent.Parent.al.auto.TextButton.Frame.TextBox
-	local	engv = script.Parent.Parent.Parent.TextLabel
-	local touch = script.Parent
-	
-	touch.MouseButton1Click:Connect(function()
-		eng.Text = "Auto (CLICK HERE TO START)"
-		engc.PlaceholderText = "paste state 1-10 if you want to auto play or skip"
-		engv.Text = "if you in lobby go to teleport to tree first for auto!(bug in lobby)"
-	end)
-	
-	
-	
-end;
-task.spawn(C_29);
--- StarterGui.cheat uix.al.TextLabel.LocalScript
-local function C_2b()
-local script = G2L["2b"];
-	wait(0.1)
-	script.Parent.Text = "if you in lobby go to teleport to tree first for auto!(bug in lobby)"
-end;
-task.spawn(C_2b);
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.hp.TextButton.LocalScript
-local function C_35()
-local script = G2L["35"];
-	local scgive = script.Parent
-	
-	
-	scgive.MouseButton1Click:Connect(function()
-		
-		runc()
-		
-	end)
-	
-	
-	
-	
-	
-	
-	
-	
-	function runc()
-	--.-----------------------------------------
-	
-		local args = {
-	    [1] = "Change",
-	    [2] = "ผ้าพันแผล",
-		[3] = "Inv"
-		}
-		
-		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
-		
-	--.-----------------------------------------
-		
-	end
-	
-	
-	----NAME BUTTOn--
-	scgive.Text = "HEALTH"
-	----NAME BUTTOn--
-end;
-task.spawn(C_35);
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.bbm.TextButton.LocalScript
-local function C_3b()
-local script = G2L["3b"];
-	local scgive = script.Parent
-	
-	
-	scgive.MouseButton1Click:Connect(function()
-		
-		runfc()
-		
-	end)
-	
-	
-	
-	
-	
-	
-	
-	
-	function runfc()
-	--.-----------------------------------------
-	
-		local args = {
-	    [1] = "Change",
-	    [2] = "Boombox",
-		[3] = "Inv"
-		}
-		
-		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
-		
-	--.-----------------------------------------
-		
-	end
-	
-	
-	----NAME BUTTOn--
-	scgive.Text = "Boombox"
-	----NAME BUTTOn--
-end;
-task.spawn(C_3b);
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.fakesword.TextButton.LocalScript
-local function C_40()
-local script = G2L["40"];
-	local scgive = script.Parent
-	
-	
-	scgive.MouseButton1Click:Connect(function()
-		
-		rudnc()
-		
-	end)
-	
-	
-	
-	
-	
-	
-	
-	
-	function rudnc()
-	--.-----------------------------------------
-	
-		local args = {
-	    [1] = "Change",
-	    [2] = "sword",
-		[3] = "Inv"
-		}
-		
-		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
-		
-	--.-----------------------------------------
-		
-	end
-	
-	
-	----NAME BUTTOn--
-	scgive.Text = "Sword(No Damage)"
-	----NAME BUTTOn--
-end;
-task.spawn(C_40);
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.thd.TextButton.LocalScript
-local function C_45()
-local script = G2L["45"];
-	local scgive = script.Parent
-	
-	
-	scgive.MouseButton1Click:Connect(function()
-		
-		rudnxc()
-		
-	end)
-	
-	
-	
-	
-	
-	
-	
-	
-	function rudnxc()
-	--.-----------------------------------------
-	
-		local args = {
-	    [1] = "Change",
-	    [2] = "TheChaosEdge",
-		[3] = "Inv"
-		}
-		
-		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
-		
-	--.-----------------------------------------
-		
-	end
-	
-	
-	----NAME BUTTOn--
-	scgive.Text = "Admin Sword"
-	----NAME BUTTOn--
-end;
-task.spawn(C_45);
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.pizz.TextButton.LocalScript
-local function C_4a()
-local script = G2L["4a"];
-	local scgive = script.Parent
-	
-	
-	scgive.MouseButton1Click:Connect(function()
-		
-		rucdnc()
-		
-	end)
-	
-	
-	
-	
-	
-	
-	
-	
-	function rucdnc()
-	--.-----------------------------------------
-	
-		local args = {
-	    [1] = "Change",
-	    [2] = "Pizza",
-		[3] = "Inv"
-		}
-		
-		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
-		
-	--.-----------------------------------------
-		
-	end
-	
-	
-	----NAME BUTTOn--
-	scgive.Text = "Pizza"
-	----NAME BUTTOn--
-end;
-task.spawn(C_4a);
--- StarterGui.cheat uix.al.item.ScrollingFrame.tab.giver.TextButton.LocalScript
-local function C_4f()
-local script = G2L["4f"];
-	local scgive = script.Parent
-	
-	
-	scgive.MouseButton1Click:Connect(function()
-		
-		rucdnc()
-		
-	end)
-	
-	
-	
-	
-	
-	
-	
-	
-	function rucdnc()
-	--.-----------------------------------------
-	
-		local args = {
-	    [1] = "Change",
-	    [2] = "Pizza",
-		[3] = "Inv"
-		}
-		
-		game:GetService("ReplicatedStorage"):WaitForChild("Inventory"):FireServer(unpack(args))
-		
-	--.-----------------------------------------
-		
-	end
-	
-	
-	----NAME BUTTOn--
-	scgive.Text = "Pizza"
-	----NAME BUTTOn--
-end;
-task.spawn(C_4f);
--- StarterGui.cheat uix.al.item.TextLabel.LocalScript
-local function C_51()
-local script = G2L["51"];
-	while true do
-		wait()
-		script.Parent.TextTransparency = 0.5
-		wait()
-		script.Parent.TextTransparency = 0
-	end
-end;
-task.spawn(C_51);
--- StarterGui.cheat uix.al.item.TextLabel.UIGradient.LocalScript
-local function C_53()
-local script = G2L["53"];
-	while true do
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn
+G2L["6f"] = Instance.new("Frame", G2L["53"]);
+G2L["6f"]["BorderSizePixel"] = 0;
+G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6f"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["6f"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6f"]["Name"] = [[btn]];
+G2L["6f"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton
+G2L["70"] = Instance.new("TextButton", G2L["6f"]);
+G2L["70"]["TextWrapped"] = true;
+G2L["70"]["BorderSizePixel"] = 0;
+G2L["70"]["TextSize"] = 14;
+G2L["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["TextScaled"] = true;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["70"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["70"]["BackgroundTransparency"] = 1;
+G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["70"]["Text"] = [[WHITE WIREFRAME : OFF]];
+G2L["70"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+G2L["71"] = Instance.new("LocalScript", G2L["70"]);
+G2L["71"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+G2L["72"] = Instance.new("LocalScript", G2L["70"]);
+G2L["72"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+G2L["73"] = Instance.new("LocalScript", G2L["70"]);
+G2L["73"]["Name"] = [[TogglePartOutline]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIStroke
+G2L["74"] = Instance.new("UIStroke", G2L["6f"]);
+G2L["74"]["Transparency"] = 0.9;
+G2L["74"]["Thickness"] = 1.05;
+G2L["74"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient
+G2L["75"] = Instance.new("UIGradient", G2L["6f"]);
+G2L["75"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["76"] = Instance.new("LocalScript", G2L["75"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn
+G2L["77"] = Instance.new("Frame", G2L["53"]);
+G2L["77"]["BorderSizePixel"] = 0;
+G2L["77"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["77"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["77"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["77"]["Name"] = [[btn]];
+G2L["77"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton
+G2L["78"] = Instance.new("TextButton", G2L["77"]);
+G2L["78"]["TextWrapped"] = true;
+G2L["78"]["BorderSizePixel"] = 0;
+G2L["78"]["TextSize"] = 14;
+G2L["78"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["TextScaled"] = true;
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["78"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["78"]["BackgroundTransparency"] = 1;
+G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["78"]["Text"] = [[BLUE WIREFRAME : OFF]];
+G2L["78"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+G2L["79"] = Instance.new("LocalScript", G2L["78"]);
+G2L["79"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+G2L["7a"] = Instance.new("LocalScript", G2L["78"]);
+G2L["7a"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+G2L["7b"] = Instance.new("LocalScript", G2L["78"]);
+G2L["7b"]["Name"] = [[TogglePartOutline]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.UIStroke
+G2L["7c"] = Instance.new("UIStroke", G2L["78"]);
+G2L["7c"]["Transparency"] = 0.9;
+G2L["7c"]["Thickness"] = 1.05;
+G2L["7c"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient
+G2L["7d"] = Instance.new("UIGradient", G2L["77"]);
+G2L["7d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["7e"] = Instance.new("LocalScript", G2L["7d"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn
+G2L["7f"] = Instance.new("Frame", G2L["53"]);
+G2L["7f"]["BorderSizePixel"] = 0;
+G2L["7f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7f"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["7f"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["7f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7f"]["Name"] = [[btn]];
+G2L["7f"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton
+G2L["80"] = Instance.new("TextButton", G2L["7f"]);
+G2L["80"]["TextWrapped"] = true;
+G2L["80"]["BorderSizePixel"] = 0;
+G2L["80"]["TextSize"] = 14;
+G2L["80"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["TextScaled"] = true;
+G2L["80"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["80"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["80"]["BackgroundTransparency"] = 1;
+G2L["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["80"]["Text"] = [[RED WIREFRAME : OFF]];
+G2L["80"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+G2L["81"] = Instance.new("LocalScript", G2L["80"]);
+G2L["81"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+G2L["82"] = Instance.new("LocalScript", G2L["80"]);
+G2L["82"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+G2L["83"] = Instance.new("LocalScript", G2L["80"]);
+G2L["83"]["Name"] = [[TogglePartOutline]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.UIStroke
+G2L["84"] = Instance.new("UIStroke", G2L["80"]);
+G2L["84"]["Transparency"] = 0.9;
+G2L["84"]["Thickness"] = 1.05;
+G2L["84"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient
+G2L["85"] = Instance.new("UIGradient", G2L["7f"]);
+G2L["85"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["86"] = Instance.new("LocalScript", G2L["85"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn
+G2L["87"] = Instance.new("Frame", G2L["53"]);
+G2L["87"]["BorderSizePixel"] = 0;
+G2L["87"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["87"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["87"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["87"]["Name"] = [[btn]];
+G2L["87"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton
+G2L["88"] = Instance.new("TextButton", G2L["87"]);
+G2L["88"]["TextWrapped"] = true;
+G2L["88"]["BorderSizePixel"] = 0;
+G2L["88"]["TextSize"] = 14;
+G2L["88"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["TextScaled"] = true;
+G2L["88"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["88"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["88"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["88"]["BackgroundTransparency"] = 1;
+G2L["88"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["88"]["Text"] = [[GROP WIREFRAME : OFF]];
+G2L["88"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+G2L["89"] = Instance.new("LocalScript", G2L["88"]);
+G2L["89"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+G2L["8a"] = Instance.new("LocalScript", G2L["88"]);
+G2L["8a"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+G2L["8b"] = Instance.new("LocalScript", G2L["88"]);
+G2L["8b"]["Name"] = [[TogglePartOutline]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.UIStroke
+G2L["8c"] = Instance.new("UIStroke", G2L["88"]);
+G2L["8c"]["Transparency"] = 0.9;
+G2L["8c"]["Thickness"] = 1.05;
+G2L["8c"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient
+G2L["8d"] = Instance.new("UIGradient", G2L["87"]);
+G2L["8d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["8e"] = Instance.new("LocalScript", G2L["8d"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn
+G2L["8f"] = Instance.new("Frame", G2L["53"]);
+G2L["8f"]["BorderSizePixel"] = 0;
+G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8f"]["Size"] = UDim2.new(1, 0, 0.06146, 0);
+G2L["8f"]["Position"] = UDim2.new(-0, 0, 0, 0);
+G2L["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8f"]["Name"] = [[btn]];
+G2L["8f"]["BackgroundTransparency"] = 0.55;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton
+G2L["90"] = Instance.new("TextButton", G2L["8f"]);
+G2L["90"]["TextWrapped"] = true;
+G2L["90"]["BorderSizePixel"] = 0;
+G2L["90"]["TextSize"] = 14;
+G2L["90"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["90"]["TextScaled"] = true;
+G2L["90"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["90"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["90"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["90"]["BackgroundTransparency"] = 1;
+G2L["90"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["90"]["Text"] = [[SMALL WIRE FRAME : OFF]];
+G2L["90"]["Position"] = UDim2.new(0.00368, 0, 0.00267, 0);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+G2L["91"] = Instance.new("LocalScript", G2L["90"]);
+G2L["91"]["Name"] = [[text]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+G2L["92"] = Instance.new("LocalScript", G2L["90"]);
+G2L["92"]["Name"] = [[sound]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+G2L["93"] = Instance.new("LocalScript", G2L["90"]);
+G2L["93"]["Name"] = [[TogglePartOutline]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.UIStroke
+G2L["94"] = Instance.new("UIStroke", G2L["90"]);
+G2L["94"]["Transparency"] = 0.9;
+G2L["94"]["Thickness"] = 1.05;
+G2L["94"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient
+G2L["95"] = Instance.new("UIGradient", G2L["8f"]);
+G2L["95"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.490, Color3.fromRGB(0, 27, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+G2L["96"] = Instance.new("LocalScript", G2L["95"]);
+
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3
+G2L["97"] = Instance.new("Frame", G2L["33"]);
+G2L["97"]["Visible"] = false;
+G2L["97"]["BorderSizePixel"] = 0;
+G2L["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["97"]["Name"] = [[tab3]];
+G2L["97"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.TextLabel
+G2L["98"] = Instance.new("TextLabel", G2L["97"]);
+G2L["98"]["TextWrapped"] = true;
+G2L["98"]["BorderSizePixel"] = 0;
+G2L["98"]["TextScaled"] = true;
+G2L["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["98"]["TextSize"] = 14;
+G2L["98"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["98"]["BackgroundTransparency"] = 1;
+G2L["98"]["Size"] = UDim2.new(1, 0, 0.06471, 0);
+G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["98"]["Text"] = [[- TAB 3 -]];
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame
+G2L["99"] = Instance.new("ScrollingFrame", G2L["97"]);
+G2L["99"]["Active"] = true;
+G2L["99"]["BorderSizePixel"] = 0;
+G2L["99"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["99"]["Size"] = UDim2.new(1, 0, 0.93529, 0);
+G2L["99"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 222, 255);
+G2L["99"]["Position"] = UDim2.new(0, 0, 0.06471, 0);
+G2L["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["99"]["ScrollBarThickness"] = 2;
+G2L["99"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory
+G2L["9a"] = Instance.new("Frame", G2L["99"]);
+G2L["9a"]["BorderSizePixel"] = 0;
+G2L["9a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["9a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9a"]["Name"] = [[memory]];
+G2L["9a"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab3.ScrollingFrame.memory.UIListLayout
+G2L["9b"] = Instance.new("UIListLayout", G2L["9a"]);
+G2L["9b"]["Padding"] = UDim.new(0, 8);
+G2L["9b"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.modmenu.menu.TextLabel
+G2L["9c"] = Instance.new("TextLabel", G2L["c"]);
+G2L["9c"]["TextWrapped"] = true;
+G2L["9c"]["BorderSizePixel"] = 0;
+G2L["9c"]["TextScaled"] = true;
+G2L["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9c"]["TextSize"] = 14;
+G2L["9c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9c"]["BackgroundTransparency"] = 1;
+G2L["9c"]["Size"] = UDim2.new(0.39809, 0, 1, 0);
+G2L["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9c"]["Text"] = [[ILDK MENU]];
+G2L["9c"]["Position"] = UDim2.new(0.01433, 0, 0, 0);
+
+
+-- StarterGui.modmenu.ic.UIStroke.UIGradient.LocalScript
+local function C_7()
+local script = G2L["7"];
+	while true do 
 		wait()
 		script.Parent.Rotation += 2
 	end
 end;
-task.spawn(C_53);
--- StarterGui.cheat uix.al.TextLabel.LocalScript
-local function C_55()
-local script = G2L["55"];
-	wait(0.1)
-	script.Parent.Text = "v1.1.3"
+task.spawn(C_7);
+-- StarterGui.modmenu.ic.nove
+local function C_8()
+local script = G2L["8"];
+	script.Parent.Active = true
+	script.Parent.Draggable = true
 end;
-task.spawn(C_55);
+task.spawn(C_8);
+-- StarterGui.modmenu.ic.togg
+local function C_9()
+local script = G2L["9"];
+	local clik = script.Parent
+	local tgui = script.Parent.Parent.menu
+	local stui = true
+	
+	local ons = script.Parent.ron
+	local onss = script.Parent.roof
+	
+	clik.MouseButton1Click:Connect(function()
+		if stui == true then
+			stui = false
+			wait()
+			tgui.Visible = stui
+			ons:Play()
+		else
+			stui = true
+			wait()
+			tgui.Visible = stui
+			onss:Play()
+		end
+	end)
+end;
+task.spawn(C_9);
+-- StarterGui.modmenu.menu.UIStroke.UIGradient.LocalScript
+local function C_10()
+local script = G2L["10"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_10);
+-- StarterGui.modmenu.menu.fi.UIStroke.UIGradient.LocalScript
+local function C_15()
+local script = G2L["15"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_15);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+local function C_1a()
+local script = G2L["1a"];
+	local cik = script.Parent
+	local tabaim = script.Parent.Parent.Parent.Parent.tab
+	local sdef = script.Parent.Parent.Parent.click
+	
+	cik.MouseButton1Click:Connect(function()
+		sdef:Play()
+		tabaim:TweenPosition(UDim2.new(0.5, 0, -0.003, 0), "Out", "Sine", 0, true)
+		wait()
+		tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
+	end)
+end;
+task.spawn(C_1a);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+local function C_1b()
+local script = G2L["1b"];
+	local cik = script.Parent
+	local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
+	local tab2 = script.Parent.Parent.Parent.Parent.tab.showtab.tab2
+	local tab3 = script.Parent.Parent.Parent.Parent.tab.showtab.tab3
+	
+	local o = true
+	local f = false
+	
+	cik.MouseButton1Click:Connect(function()
+		tab1.Visible = o
+		tab2.Visible = f
+		tab3.Visible = f
+	end)
+end;
+task.spawn(C_1b);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+local function C_1e()
+local script = G2L["1e"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_1e);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+local function C_22()
+local script = G2L["22"];
+	local cik = script.Parent
+	local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
+	local tab2 = script.Parent.Parent.Parent.Parent.tab.showtab.tab2
+	local tab3 = script.Parent.Parent.Parent.Parent.tab.showtab.tab3
+	
+	local o = true
+	local f = false
+	
+	cik.MouseButton1Click:Connect(function()
+		tab1.Visible = f
+		tab2.Visible = o
+		tab3.Visible = f
+	end)
+end;
+task.spawn(C_22);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+local function C_23()
+local script = G2L["23"];
+	local cik = script.Parent
+	local tabaim = script.Parent.Parent.Parent.Parent.tab
+	local sdef = script.Parent.Parent.Parent.click
+	
+	cik.MouseButton1Click:Connect(function()
+		sdef:Play()
+		tabaim:TweenPosition(UDim2.new(0.5, 0, -0.003, 0), "Out", "Sine", 0, true)
+		wait()
+		tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
+	end)
+end;
+task.spawn(C_23);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+local function C_26()
+local script = G2L["26"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_26);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.chngetan
+local function C_29()
+local script = G2L["29"];
+	local cik = script.Parent
+	local tab1 = script.Parent.Parent.Parent.Parent.tab.showtab.tab1
+	local tab2 = script.Parent.Parent.Parent.Parent.tab.showtab.tab2
+	local tab3 = script.Parent.Parent.Parent.Parent.tab.showtab.tab3
+	
+	local o = true
+	local f = false
+	
+	cik.MouseButton1Click:Connect(function()
+		tab1.Visible = f
+		tab2.Visible = f
+		tab3.Visible = o
+	end)
+end;
+task.spawn(C_29);
+-- StarterGui.modmenu.menu.fi.fa.btn.TextButton.aim
+local function C_2a()
+local script = G2L["2a"];
+	local cik = script.Parent
+	local tabaim = script.Parent.Parent.Parent.Parent.tab
+	local sdef = script.Parent.Parent.Parent.click
+	
+	cik.MouseButton1Click:Connect(function()
+		sdef:Play()
+		tabaim:TweenPosition(UDim2.new(0.5, 0, -0.003, 0), "Out", "Sine", 0, true)
+		wait()
+		tabaim:TweenPosition(UDim2.new(0.451, 0,-0.003, 0), "Out", "Sine", 0.5, true)
+	end)
+end;
+task.spawn(C_2a);
+-- StarterGui.modmenu.menu.fi.fa.btn.UIGradient.LocalScript
+local function C_2d()
+local script = G2L["2d"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_2d);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.FlyJumpToggle
+local function C_3a()
+local script = G2L["3a"];
+	local UserInputService = game:GetService("UserInputService")
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	local flyJumpEnabled = false
+	
+	local function onButtonClicked()
+	    flyJumpEnabled = not flyJumpEnabled
+	end
+	
+	local function onJumpRequest()
+	    if flyJumpEnabled then
+	        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	        humanoid:Move(Vector3.new(0, 50, 0), true)
+	    end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onButtonClicked)
+	UserInputService.JumpRequest:Connect(onJumpRequest)
+	
+	
+end;
+task.spawn(C_3a);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+local function C_3b()
+local script = G2L["3b"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "FLY JUMP : ON"
+	    else
+	        button.Text = "FLY JUMP : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_3b);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+local function C_3c()
+local script = G2L["3c"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_3c);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_3f()
+local script = G2L["3f"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_3f);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+local function C_43()
+local script = G2L["43"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "WALKSPEED : ON"
+	    else
+	        button.Text = "WALKSPEED : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_43);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.SetPlayerSpeedOnClick
+local function C_44()
+local script = G2L["44"];
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	
+	local button = script.Parent
+	local tgt = true
+	
+	local normal = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+	
+	button.MouseButton1Click:Connect(function()
+		if tgt == true then
+			tgt = false
+			local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				
+				humanoid.WalkSpeed = 300
+				
+			end
+		
+		else
+			
+			tgt = true
+			local character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+	
+				humanoid.WalkSpeed = normal
+	
+			end		
+			
+			
+		end
+	    
+	    
+	    
+	    
+	end)
+	
+	
+end;
+task.spawn(C_44);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+local function C_45()
+local script = G2L["45"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_45);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_48()
+local script = G2L["48"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_48);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.text
+local function C_4b()
+local script = G2L["4b"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "NOCLIP : ON"
+	    else
+	        button.Text = "NOCLIP : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_4b);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.TextButton.sound
+local function C_4c()
+local script = G2L["4c"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_4c);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab1.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_4f()
+local script = G2L["4f"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_4f);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+local function C_57()
+local script = G2L["57"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+			button.Text = "ESP ALL PLAYER : ON"
+	    else
+			button.Text = "ESP ALL PLAYER : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_57);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+local function C_58()
+local script = G2L["58"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_58);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleESP
+local function C_59()
+local script = G2L["59"];
+	local Players = game:GetService("Players")
+	local TweenService = game:GetService("TweenService")
+	
+	
+	local tdg = false
+	
+	
+	local espEnabled = false
+	
+	local function createRainbowTween(highlight)
+		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true)
+		local goal = {OutlineColor = Color3.fromRGB(0, 255, 255)}
+		local tween = TweenService:Create(highlight, tweenInfo, goal)
+		tween.Completed:Connect(function()
+			goal.OutlineColor = Color3.fromRGB(64, 0, 255)
+			tween:Play()
+		end)
+		tween.Completed:Connect(function()
+			goal.OutlineColor = Color3.fromRGB(0, 166, 255)
+			tween:Play()
+		end)
+		tween.Completed:Connect(function()
+			goal.OutlineColor = Color3.fromRGB(0, 255, 0)
+			tween:Play()
+		end)
+		tween.Completed:Connect(function()
+			goal.OutlineColor = Color3.fromRGB(255, 234, 0)
+			tween:Play()
+		end)
+		tween.Completed:Connect(function()
+			goal.OutlineColor = Color3.fromRGB(255, 183, 0)
+			tween:Play()
+		end)
+		tween.Completed:Connect(function()
+			goal.OutlineColor = Color3.fromRGB(255, 0, 0)
+			tween:Play()
+		end)
+		return tween
+	end
+	
+	local function toggleESP()
+		espEnabled = not espEnabled
+		for _, player in Players:GetPlayers() do
+			if player.Character then
+				local highlight = player.Character:FindFirstChild("Highlight")
+				if espEnabled then
+					if not highlight then
+						highlight = Instance.new("Highlight")
+						highlight.Parent = player.Character
+					end
+	
+					highlight.Enabled = true
+	
+	
+					highlight.FillColor = Color3.new(0, 0, 0)
+					highlight.FillTransparency = 1
+					local tween = createRainbowTween(highlight)
+					tween:Play()
+		
+				else
+					if highlight then
+						
+						highlight.Enabled = false
+					end
+				end
+			end
+		end
+	end
+	
+	Players.PlayerRemoving:Connect(function(player)
+		if player.Character then
+			local highlight = player.Character:FindFirstChild("Highlight")
+			if highlight then
+				highlight:Destroy()
+			end
+		end
+	end)
+	
+	Players.PlayerAdded:Connect(function(player)
+		if player.Character then
+			local highlight = player.Character:FindFirstChild("Highlight")
+			if not highlight then
+				highlight = Instance.new("Highlight")
+				highlight.Parent = player.Character
+			end
+			if espEnabled then
+				highlight.Enabled = true
+				highlight.FillColor = Color3.new(0, 0, 0)
+				highlight.FillTransparency = 1
+				local tween = createRainbowTween(highlight)
+				tween:Play()
+			end
+		end
+	end)
+	
+	local button = script.Parent
+	button.MouseButton1Click:Connect(toggleESP)
+	
+	
+	
+	
+end;
+task.spawn(C_59);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_5c()
+local script = G2L["5c"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_5c);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+local function C_5f()
+local script = G2L["5f"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "TIME SET : NIGHT"
+	    else
+	        button.Text = "TIME SET : DAY"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_5f);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+local function C_60()
+local script = G2L["60"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_60);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleDayNight
+local function C_61()
+local script = G2L["61"];
+	local button = script.Parent
+	local isDay = true
+	
+	local function setDay()
+	    local lighting = game:GetService("Lighting")
+	    lighting.TimeOfDay = "14:00:00" -- Set time to day
+	    lighting.GlobalShadows = false -- Remove shadows
+	end
+	
+	local function setNight()
+	    local lighting = game:GetService("Lighting")
+	    lighting.TimeOfDay = "00:00:00" -- Set time to night
+	    lighting.GlobalShadows = true -- Enable shadows
+	end
+	
+	local function toggleDayNight()
+	    if isDay then
+	        setNight()
+	    else
+	        setDay()
+	    end
+	    isDay = not isDay
+	end
+	
+	button.MouseButton1Click:Connect(function()
+	    toggleDayNight()
+	end)
+	
+	-- Initial setup
+	setDay()
+	
+	
+	
+end;
+task.spawn(C_61);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_64()
+local script = G2L["64"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_64);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+local function C_67()
+local script = G2L["67"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "SOME TEXTURE : ON"
+	    else
+	        button.Text = "SOME TEXTURE : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_67);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+local function C_68()
+local script = G2L["68"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_68);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.ToggleTextureScript
+local function C_6a()
+local script = G2L["6a"];
+	local button = script.Parent
+	local isToggled = false
+	local originalTextures = {}
+	
+	local function toggleTextures()
+	    isToggled = not isToggled
+	    for _, instance in game:GetDescendants() do
+	        if instance:IsA("Texture") or instance:IsA("Decal") then
+	            if isToggled then
+	                originalTextures[instance] = instance.Texture
+	                instance.Texture = "rbxassetid://118116050473564"
+	            else
+	                instance.Texture = originalTextures[instance] or instance.Texture
+	            end
+	        end
+	    end
+	end
+	
+	button.MouseButton1Click:Connect(toggleTextures)
+	
+	
+end;
+task.spawn(C_6a);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_6d()
+local script = G2L["6d"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_6d);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+local function C_71()
+local script = G2L["71"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "WHITE WIREFRAME : ON"
+	    else
+	        button.Text = "WHITE WIREFRAME : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_71);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+local function C_72()
+local script = G2L["72"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_72);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+local function C_73()
+local script = G2L["73"];
+	local button = script.Parent
+	local outlineVisible = false
+	
+	local function toggleOutline()
+		outlineVisible = not outlineVisible
+		-- Toggle outline for all parts in the Workspace
+		for _, instance in game.Workspace:GetChildren() do
+			if instance:IsA("BasePart") then
+				local selectionBox = instance:FindFirstChild("SelectionBox")
+				if not selectionBox then
+					selectionBox = Instance.new("SelectionBox")
+					selectionBox.Adornee = instance
+					selectionBox.Parent = instance
+				end
+				selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
+				selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+				instance.Transparency = outlineVisible and 1 or 0
+				selectionBox.Visible = outlineVisible
+			elseif instance:IsA("Model") then
+				for _, part in instance:GetDescendants() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
+						selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	
+		-- Toggle outline for all players' characters
+		local Players = game:GetService("Players")
+		for _, player in Players:GetPlayers() do
+			local character = player.Character
+			if character then
+				for _, part in character:GetChildren() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
+						selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleOutline)
+	
+end;
+task.spawn(C_73);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_76()
+local script = G2L["76"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_76);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+local function C_79()
+local script = G2L["79"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "BLUE WIREFRAME : ON"
+	    else
+	        button.Text = "BLUE WIREFRAME : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_79);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+local function C_7a()
+local script = G2L["7a"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_7a);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+local function C_7b()
+local script = G2L["7b"];
+	local button = script.Parent
+	local outlineVisible = false
+	
+	local function toggleOutline()
+		outlineVisible = not outlineVisible
+		-- Toggle outline for all parts in the Workspace
+		for _, instance in game.Workspace:GetChildren() do
+			if instance:IsA("BasePart") then
+				local selectionBox = instance:FindFirstChild("SelectionBox")
+				if not selectionBox then
+					selectionBox = Instance.new("SelectionBox")
+					selectionBox.Adornee = instance
+					selectionBox.Parent = instance
+				end
+				selectionBox.Color3 = Color3.new(0, 0.94902, 1) -- Set outline color to white
+				selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+				instance.Transparency = outlineVisible and 1 or 0
+				selectionBox.Visible = outlineVisible
+			elseif instance:IsA("Model") then
+				for _, part in instance:GetDescendants() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(0, 1, 0.968627) -- Set outline color to white
+						selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	
+		-- Toggle outline for all players' characters
+		local Players = game:GetService("Players")
+		for _, player in Players:GetPlayers() do
+			local character = player.Character
+			if character then
+				for _, part in character:GetChildren() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(0, 1, 0.968627) -- Set outline color to white
+						selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleOutline)
+	
+end;
+task.spawn(C_7b);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_7e()
+local script = G2L["7e"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_7e);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+local function C_81()
+local script = G2L["81"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "RED WIREFRAME : ON"
+	    else
+	        button.Text = "RED WIREFRAME : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_81);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+local function C_82()
+local script = G2L["82"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_82);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+local function C_83()
+local script = G2L["83"];
+	local button = script.Parent
+	local outlineVisible = false
+	
+	local function toggleOutline()
+		outlineVisible = not outlineVisible
+		-- Toggle outline for all parts in the Workspace
+		for _, instance in game.Workspace:GetChildren() do
+			if instance:IsA("BasePart") then
+				local selectionBox = instance:FindFirstChild("SelectionBox")
+				if not selectionBox then
+					selectionBox = Instance.new("SelectionBox")
+					selectionBox.Adornee = instance
+					selectionBox.Parent = instance
+				end
+				selectionBox.Color3 = Color3.new(1, 0, 0.0156863) -- Set outline color to white
+				selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+				instance.Transparency = outlineVisible and 1 or 0
+				selectionBox.Visible = outlineVisible
+			elseif instance:IsA("Model") then
+				for _, part in instance:GetDescendants() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(1, 0, 0.0156863) -- Set outline color to white
+						selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	
+		-- Toggle outline for all players' characters
+		local Players = game:GetService("Players")
+		for _, player in Players:GetPlayers() do
+			local character = player.Character
+			if character then
+				for _, part in character:GetChildren() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(1, 0, 0.0156863) -- Set outline color to white
+						selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleOutline)
+	
+end;
+task.spawn(C_83);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_86()
+local script = G2L["86"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_86);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+local function C_89()
+local script = G2L["89"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "GROP WIREFRAME : ON"
+	    else
+	        button.Text = "GROP WIREFRAME : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_89);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+local function C_8a()
+local script = G2L["8a"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_8a);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+local function C_8b()
+local script = G2L["8b"];
+	local button = script.Parent
+	local outlineVisible = false
+	
+	local function toggleOutline()
+		outlineVisible = not outlineVisible
+		-- Toggle outline for all parts in the Workspace
+		for _, instance in game.Workspace:GetChildren() do
+			if instance:IsA("BasePart") then
+				local selectionBox = instance:FindFirstChild("SelectionBox")
+				if not selectionBox then
+					selectionBox = Instance.new("SelectionBox")
+					selectionBox.Adornee = instance
+					selectionBox.Parent = instance
+				end
+				selectionBox.Color3 = Color3.new(0, 0.0509804, 1) -- Set outline color to white
+				selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+				instance.Transparency = outlineVisible and 1 or 0
+				selectionBox.Visible = outlineVisible
+			elseif instance:IsA("Model") then
+				for _, part in instance:GetDescendants() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(1, 0, 0.0156863) -- Set outline color to white
+						selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	
+		-- Toggle outline for all players' characters
+		local Players = game:GetService("Players")
+		for _, player in Players:GetPlayers() do
+			local character = player.Character
+			if character then
+				for _, part in character:GetChildren() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(0.133333, 1, 0) -- Set outline color to white
+						selectionBox.LineThickness = 0.005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleOutline)
+	
+end;
+task.spawn(C_8b);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_8e()
+local script = G2L["8e"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_8e);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.text
+local function C_91()
+local script = G2L["91"];
+	local button = script.Parent
+	local isFlyJumpOn = false
+	
+	button.MouseButton1Click:Connect(function()
+	    isFlyJumpOn = not isFlyJumpOn
+	    if isFlyJumpOn then
+	        button.Text = "SMALL WIREFRAME : ON"
+	    else
+	        button.Text = "SMALL WIREFRAME : OFF"
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_91);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.sound
+local function C_92()
+local script = G2L["92"];
+	local sound = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click2
+	local sound2 = script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent.fa.click3
+	
+	local scplay = script.Parent
+	
+	local tgtg = true
+	
+	scplay.MouseButton1Click:Connect(function()
+		if tgtg == true then
+			tgtg = false
+			sound:Play()
+		else
+			tgtg = true
+			sound2:Play()
+		end
+		
+	end)
+end;
+task.spawn(C_92);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.TextButton.TogglePartOutline
+local function C_93()
+local script = G2L["93"];
+	local button = script.Parent
+	local outlineVisible = false
+	
+	local function toggleOutline()
+		outlineVisible = not outlineVisible
+		-- Toggle outline for all parts in the Workspace
+		for _, instance in game.Workspace:GetChildren() do
+			if instance:IsA("BasePart") then
+				local selectionBox = instance:FindFirstChild("SelectionBox")
+				if not selectionBox then
+					selectionBox = Instance.new("SelectionBox")
+					selectionBox.Adornee = instance
+					selectionBox.Parent = instance
+				end
+				selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
+				selectionBox.LineThickness = 0.0005 -- Set outline thickness to 0.5
+				instance.Transparency = outlineVisible and 1 or 0
+				selectionBox.Visible = outlineVisible
+			elseif instance:IsA("Model") then
+				for _, part in instance:GetDescendants() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
+						selectionBox.LineThickness = 0.0005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	
+		-- Toggle outline for all players' characters
+		local Players = game:GetService("Players")
+		for _, player in Players:GetPlayers() do
+			local character = player.Character
+			if character then
+				for _, part in character:GetChildren() do
+					if part:IsA("BasePart") then
+						local selectionBox = part:FindFirstChild("SelectionBox")
+						if not selectionBox then
+							selectionBox = Instance.new("SelectionBox")
+							selectionBox.Adornee = part
+							selectionBox.Parent = part
+						end
+						selectionBox.Color3 = Color3.new(1, 1, 1) -- Set outline color to white
+						selectionBox.LineThickness = 0.0005 -- Set outline thickness to 0.5
+						part.Transparency = outlineVisible and 1 or 0
+						selectionBox.Visible = outlineVisible
+					end
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleOutline)
+	
+end;
+task.spawn(C_93);
+-- StarterGui.modmenu.menu.fi.tab.showtab.tab2.ScrollingFrame.memory.btn.UIGradient.LocalScript
+local function C_96()
+local script = G2L["96"];
+	while true do 
+		wait()
+		script.Parent.Rotation += 2
+	end
+end;
+task.spawn(C_96);
 
 return G2L["1"], require;
